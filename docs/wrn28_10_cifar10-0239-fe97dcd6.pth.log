@@ -1,0 +1,2065 @@
+Script command line:
+train_gl_cifar10.py --num-gpus=1 --model=wrn28_10_cifar10 --save-dir=../imgclsmob_data/wrn28_10_cifar10_a/ --batch-size=100 --batch-size-scale=1 -j=12 --num-epochs=500 --lr=0.2 --lr-mode=cosine --wd=0.0001 --warmup-epochs=5 --warmup-mode=cosine --save-interval=20 --log-interval=400 --attempt=1 --start-epoch=1 --mixup --mixup-epoch-tail=10
+Script arguments:
+Namespace(attempt=1, batch_size=100, batch_size_scale=1, beta_wd_mult=1.0, bias_wd_mult=1.0, data_dir='../imgclsmob_data/cifar10', dtype='float32', gamma_wd_mult=1.0, grad_clip=None, in_channels=3, label_smoothing=False, log_interval=400, log_packages='mxnet', log_pip_packages='mxnet-cu92', logging_file_name='train.log', lr=0.2, lr_decay=0.1, lr_decay_epoch='40,60', lr_decay_period=0, lr_mode='cosine', mixup=True, mixup_epoch_tail=10, model='wrn28_10_cifar10', momentum=0.9, num_classes=10, num_epochs=500, num_gpus=1, num_workers=12, optimizer_name='nag', poly_power=2, resume='', resume_state='', save_dir='../imgclsmob_data/wrn28_10_cifar10_a/', save_interval=20, seed=6102, start_epoch=1, target_lr=1e-08, tune_layers='', use_pretrained=False, warmup_epochs=5, warmup_lr=1e-08, warmup_mode='cosine', wd=0.0001)
+Env_stats:
+{
+    "mxnet": "1.5.0",
+    "mxnet-cu92": "Name: mxnet-cu92\nVersion: 1.5.0b20190112\nSummary: MXNet is an ultra-scalable deep learning framework. This version uses CUDA-9.2.\nHome-page: https://github.com/apache/incubator-mxnet\nAuthor: UNKNOWN\nAuthor-email: UNKNOWN\nLicense: Apache 2.0\nLocation: /usr/local/lib/python3.6/dist-packages\nRequires: graphviz, requests, numpy\nRequired-by:",
+    "python": "3.6.7",
+    "pwd": "/netbox/imgclsmob/common",
+    "git": "commit 15e0a1d893b06da9e3ec5b961ae2c0c240907f68\nAuthor: osmr <osemery@gmail.com>\nDate:   Sat Jan 12 18:30:15 2019 +0300\n\n    Experimenting with CIFAR10WRN"
+}
+Epoch[1] Batch [399]	Speed: 354.61 samples/sec	err=0.8202	lr=0.01231
+[Epoch 1] speed: 357.00 samples/sec	time cost: 140.02 sec
+[Epoch 1] training: err=0.8034	loss=2.1301
+[Epoch 1] validation: err=0.5975
+Epoch[2] Batch [399]	Speed: 362.90 samples/sec	err=0.6804	lr=0.05731
+[Epoch 2] speed: 364.00 samples/sec	time cost: 137.21 sec
+[Epoch 2] training: err=0.6772	loss=1.7510
+[Epoch 2] validation: err=0.3927
+Epoch[3] Batch [399]	Speed: 365.77 samples/sec	err=0.6419	lr=0.11861
+[Epoch 3] speed: 364.00 samples/sec	time cost: 137.03 sec
+[Epoch 3] training: err=0.6329	loss=1.5951
+[Epoch 3] validation: err=0.3350
+Epoch[4] Batch [399]	Speed: 367.06 samples/sec	err=0.6144	lr=0.17281
+[Epoch 4] speed: 366.00 samples/sec	time cost: 136.54 sec
+[Epoch 4] training: err=0.6100	loss=1.5061
+[Epoch 4] validation: err=0.3111
+Epoch[5] Batch [399]	Speed: 341.58 samples/sec	err=0.5914	lr=0.19920
+[Epoch 5] speed: 345.00 samples/sec	time cost: 144.55 sec
+[Epoch 5] training: err=0.5948	loss=1.4128
+[Epoch 5] validation: err=0.2513
+Epoch[6] Batch [399]	Speed: 363.73 samples/sec	err=0.5707	lr=0.20000
+[Epoch 6] speed: 363.00 samples/sec	time cost: 137.68 sec
+[Epoch 6] training: err=0.5691	loss=1.3933
+[Epoch 6] validation: err=0.2514
+Epoch[7] Batch [399]	Speed: 365.13 samples/sec	err=0.5645	lr=0.19999
+[Epoch 7] speed: 366.00 samples/sec	time cost: 136.46 sec
+[Epoch 7] training: err=0.5628	loss=1.3126
+[Epoch 7] validation: err=0.2217
+Epoch[8] Batch [399]	Speed: 368.03 samples/sec	err=0.5582	lr=0.19998
+[Epoch 8] speed: 367.00 samples/sec	time cost: 135.94 sec
+[Epoch 8] training: err=0.5544	loss=1.3294
+[Epoch 8] validation: err=0.1876
+Epoch[9] Batch [399]	Speed: 364.10 samples/sec	err=0.5459	lr=0.19997
+[Epoch 9] speed: 363.00 samples/sec	time cost: 137.48 sec
+[Epoch 9] training: err=0.5511	loss=1.3052
+[Epoch 9] validation: err=0.1752
+Epoch[10] Batch [399]	Speed: 364.36 samples/sec	err=0.5435	lr=0.19995
+[Epoch 10] speed: 363.00 samples/sec	time cost: 137.60 sec
+[Epoch 10] training: err=0.5486	loss=1.2639
+[Epoch 10] validation: err=0.1685
+Epoch[11] Batch [399]	Speed: 363.90 samples/sec	err=0.5351	lr=0.19993
+[Epoch 11] speed: 364.00 samples/sec	time cost: 137.14 sec
+[Epoch 11] training: err=0.5333	loss=1.2587
+[Epoch 11] validation: err=0.1725
+Epoch[12] Batch [399]	Speed: 360.48 samples/sec	err=0.5553	lr=0.19991
+[Epoch 12] speed: 360.00 samples/sec	time cost: 138.52 sec
+[Epoch 12] training: err=0.5513	loss=1.2346
+[Epoch 12] validation: err=0.1839
+Epoch[13] Batch [399]	Speed: 365.45 samples/sec	err=0.5330	lr=0.19988
+[Epoch 13] speed: 366.00 samples/sec	time cost: 136.43 sec
+[Epoch 13] training: err=0.5358	loss=1.2189
+[Epoch 13] validation: err=0.1824
+Epoch[14] Batch [399]	Speed: 363.62 samples/sec	err=0.5094	lr=0.19984
+[Epoch 14] speed: 363.00 samples/sec	time cost: 137.42 sec
+[Epoch 14] training: err=0.4992	loss=1.2362
+[Epoch 14] validation: err=0.1510
+Epoch[15] Batch [399]	Speed: 364.88 samples/sec	err=0.5151	lr=0.19981
+[Epoch 15] speed: 364.00 samples/sec	time cost: 137.26 sec
+[Epoch 15] training: err=0.5130	loss=1.1972
+[Epoch 15] validation: err=0.1350
+Epoch[16] Batch [399]	Speed: 361.57 samples/sec	err=0.5173	lr=0.19977
+[Epoch 16] speed: 362.00 samples/sec	time cost: 137.88 sec
+[Epoch 16] training: err=0.5244	loss=1.2023
+[Epoch 16] validation: err=0.1613
+Epoch[17] Batch [399]	Speed: 366.51 samples/sec	err=0.5146	lr=0.19972
+[Epoch 17] speed: 365.00 samples/sec	time cost: 136.71 sec
+[Epoch 17] training: err=0.5187	loss=1.1830
+[Epoch 17] validation: err=0.1600
+Epoch[18] Batch [399]	Speed: 364.22 samples/sec	err=0.5002	lr=0.19967
+[Epoch 18] speed: 364.00 samples/sec	time cost: 137.20 sec
+[Epoch 18] training: err=0.5037	loss=1.1520
+[Epoch 18] validation: err=0.1470
+Epoch[19] Batch [399]	Speed: 365.98 samples/sec	err=0.5151	lr=0.19962
+[Epoch 19] speed: 366.00 samples/sec	time cost: 136.51 sec
+[Epoch 19] training: err=0.5169	loss=1.1682
+[Epoch 19] validation: err=0.1466
+Epoch[20] Batch [399]	Speed: 366.53 samples/sec	err=0.5289	lr=0.19956
+[Epoch 20] speed: 366.00 samples/sec	time cost: 136.48 sec
+[Epoch 20] training: err=0.5202	loss=1.1580
+[Epoch 20] validation: err=0.1581
+Epoch[21] Batch [399]	Speed: 365.16 samples/sec	err=0.5056	lr=0.19950
+[Epoch 21] speed: 366.00 samples/sec	time cost: 136.49 sec
+[Epoch 21] training: err=0.5064	loss=1.1673
+[Epoch 21] validation: err=0.1166
+Epoch[22] Batch [399]	Speed: 365.80 samples/sec	err=0.5067	lr=0.19943
+[Epoch 22] speed: 365.00 samples/sec	time cost: 136.84 sec
+[Epoch 22] training: err=0.5135	loss=1.1374
+[Epoch 22] validation: err=0.1288
+Epoch[23] Batch [399]	Speed: 364.41 samples/sec	err=0.5039	lr=0.19936
+[Epoch 23] speed: 365.00 samples/sec	time cost: 136.64 sec
+[Epoch 23] training: err=0.5059	loss=1.1396
+[Epoch 23] validation: err=0.1204
+Epoch[24] Batch [399]	Speed: 367.86 samples/sec	err=0.5088	lr=0.19929
+[Epoch 24] speed: 367.00 samples/sec	time cost: 135.99 sec
+[Epoch 24] training: err=0.5161	loss=1.1421
+[Epoch 24] validation: err=0.1106
+Epoch[25] Batch [399]	Speed: 350.35 samples/sec	err=0.4984	lr=0.19921
+[Epoch 25] speed: 351.00 samples/sec	time cost: 142.10 sec
+[Epoch 25] training: err=0.5057	loss=1.1586
+[Epoch 25] validation: err=0.1124
+Epoch[26] Batch [399]	Speed: 365.16 samples/sec	err=0.5085	lr=0.19913
+[Epoch 26] speed: 366.00 samples/sec	time cost: 136.37 sec
+[Epoch 26] training: err=0.5121	loss=1.1613
+[Epoch 26] validation: err=0.1052
+Epoch[27] Batch [399]	Speed: 365.42 samples/sec	err=0.4942	lr=0.19904
+[Epoch 27] speed: 365.00 samples/sec	time cost: 136.70 sec
+[Epoch 27] training: err=0.4993	loss=1.1407
+[Epoch 27] validation: err=0.0986
+Epoch[28] Batch [399]	Speed: 368.89 samples/sec	err=0.4831	lr=0.19896
+[Epoch 28] speed: 368.00 samples/sec	time cost: 135.74 sec
+[Epoch 28] training: err=0.4963	loss=1.1521
+[Epoch 28] validation: err=0.1107
+Epoch[29] Batch [399]	Speed: 366.23 samples/sec	err=0.4837	lr=0.19886
+[Epoch 29] speed: 366.00 samples/sec	time cost: 136.38 sec
+[Epoch 29] training: err=0.4826	loss=1.1285
+[Epoch 29] validation: err=0.1406
+Epoch[30] Batch [399]	Speed: 362.42 samples/sec	err=0.5437	lr=0.19876
+[Epoch 30] speed: 363.00 samples/sec	time cost: 137.41 sec
+[Epoch 30] training: err=0.5517	loss=1.1262
+[Epoch 30] validation: err=0.1151
+Epoch[31] Batch [399]	Speed: 365.80 samples/sec	err=0.4978	lr=0.19866
+[Epoch 31] speed: 365.00 samples/sec	time cost: 136.69 sec
+[Epoch 31] training: err=0.5072	loss=1.1382
+[Epoch 31] validation: err=0.1448
+Epoch[32] Batch [399]	Speed: 362.56 samples/sec	err=0.4852	lr=0.19856
+[Epoch 32] speed: 363.00 samples/sec	time cost: 137.57 sec
+[Epoch 32] training: err=0.4946	loss=1.1022
+[Epoch 32] validation: err=0.1042
+Epoch[33] Batch [399]	Speed: 366.10 samples/sec	err=0.5222	lr=0.19845
+[Epoch 33] speed: 364.00 samples/sec	time cost: 137.00 sec
+[Epoch 33] training: err=0.5352	loss=1.1231
+[Epoch 33] validation: err=0.1015
+Epoch[34] Batch [399]	Speed: 365.41 samples/sec	err=0.4962	lr=0.19833
+[Epoch 34] speed: 365.00 samples/sec	time cost: 136.97 sec
+[Epoch 34] training: err=0.5000	loss=1.1302
+[Epoch 34] validation: err=0.1198
+Epoch[35] Batch [399]	Speed: 360.65 samples/sec	err=0.4973	lr=0.19822
+[Epoch 35] speed: 361.00 samples/sec	time cost: 138.17 sec
+[Epoch 35] training: err=0.4975	loss=1.1204
+[Epoch 35] validation: err=0.1046
+Epoch[36] Batch [399]	Speed: 366.06 samples/sec	err=0.5103	lr=0.19810
+[Epoch 36] speed: 366.00 samples/sec	time cost: 136.57 sec
+[Epoch 36] training: err=0.5106	loss=1.1438
+[Epoch 36] validation: err=0.1217
+Epoch[37] Batch [399]	Speed: 364.78 samples/sec	err=0.4847	lr=0.19797
+[Epoch 37] speed: 365.00 samples/sec	time cost: 136.74 sec
+[Epoch 37] training: err=0.5017	loss=1.0986
+[Epoch 37] validation: err=0.1024
+Epoch[38] Batch [399]	Speed: 366.71 samples/sec	err=0.4716	lr=0.19784
+[Epoch 38] speed: 365.00 samples/sec	time cost: 136.74 sec
+[Epoch 38] training: err=0.4818	loss=1.1037
+[Epoch 38] validation: err=0.1168
+Epoch[39] Batch [399]	Speed: 367.76 samples/sec	err=0.5299	lr=0.19771
+[Epoch 39] speed: 367.00 samples/sec	time cost: 136.19 sec
+[Epoch 39] training: err=0.5228	loss=1.1021
+[Epoch 39] validation: err=0.1164
+Epoch[40] Batch [399]	Speed: 365.33 samples/sec	err=0.5135	lr=0.19757
+[Epoch 40] speed: 366.00 samples/sec	time cost: 136.49 sec
+[Epoch 40] training: err=0.5154	loss=1.1108
+[Epoch 40] validation: err=0.1054
+Epoch[41] Batch [399]	Speed: 366.85 samples/sec	err=0.5315	lr=0.19743
+[Epoch 41] speed: 367.00 samples/sec	time cost: 136.03 sec
+[Epoch 41] training: err=0.5322	loss=1.1009
+[Epoch 41] validation: err=0.1190
+Epoch[42] Batch [399]	Speed: 364.80 samples/sec	err=0.5237	lr=0.19729
+[Epoch 42] speed: 365.00 samples/sec	time cost: 136.99 sec
+[Epoch 42] training: err=0.5310	loss=1.0939
+[Epoch 42] validation: err=0.1075
+Epoch[43] Batch [399]	Speed: 365.20 samples/sec	err=0.5051	lr=0.19714
+[Epoch 43] speed: 364.00 samples/sec	time cost: 137.04 sec
+[Epoch 43] training: err=0.5026	loss=1.1096
+[Epoch 43] validation: err=0.0961
+Epoch[44] Batch [399]	Speed: 367.55 samples/sec	err=0.5061	lr=0.19698
+[Epoch 44] speed: 367.00 samples/sec	time cost: 136.04 sec
+[Epoch 44] training: err=0.4992	loss=1.0972
+[Epoch 44] validation: err=0.1028
+Epoch[45] Batch [399]	Speed: 366.72 samples/sec	err=0.4969	lr=0.19683
+[Epoch 45] speed: 365.00 samples/sec	time cost: 136.86 sec
+[Epoch 45] training: err=0.4963	loss=1.0986
+[Epoch 45] validation: err=0.0965
+Epoch[46] Batch [399]	Speed: 351.09 samples/sec	err=0.5213	lr=0.19667
+[Epoch 46] speed: 354.00 samples/sec	time cost: 141.04 sec
+[Epoch 46] training: err=0.5162	loss=1.1056
+[Epoch 46] validation: err=0.1040
+Epoch[47] Batch [399]	Speed: 366.55 samples/sec	err=0.5006	lr=0.19650
+[Epoch 47] speed: 366.00 samples/sec	time cost: 136.49 sec
+[Epoch 47] training: err=0.4944	loss=1.1173
+[Epoch 47] validation: err=0.0998
+Epoch[48] Batch [399]	Speed: 365.09 samples/sec	err=0.5081	lr=0.19633
+[Epoch 48] speed: 365.00 samples/sec	time cost: 136.95 sec
+[Epoch 48] training: err=0.4996	loss=1.0657
+[Epoch 48] validation: err=0.0973
+Epoch[49] Batch [399]	Speed: 366.29 samples/sec	err=0.5031	lr=0.19616
+[Epoch 49] speed: 365.00 samples/sec	time cost: 136.74 sec
+[Epoch 49] training: err=0.5023	loss=1.0947
+[Epoch 49] validation: err=0.1020
+Epoch[50] Batch [399]	Speed: 364.43 samples/sec	err=0.5042	lr=0.19599
+[Epoch 50] speed: 364.00 samples/sec	time cost: 137.06 sec
+[Epoch 50] training: err=0.5059	loss=1.0621
+[Epoch 50] validation: err=0.1108
+Epoch[51] Batch [399]	Speed: 368.21 samples/sec	err=0.5148	lr=0.19581
+[Epoch 51] speed: 367.00 samples/sec	time cost: 136.03 sec
+[Epoch 51] training: err=0.5082	loss=1.0889
+[Epoch 51] validation: err=0.0942
+Epoch[52] Batch [399]	Speed: 367.24 samples/sec	err=0.5048	lr=0.19562
+[Epoch 52] speed: 367.00 samples/sec	time cost: 136.12 sec
+[Epoch 52] training: err=0.4966	loss=1.0714
+[Epoch 52] validation: err=0.0994
+Epoch[53] Batch [399]	Speed: 362.32 samples/sec	err=0.5049	lr=0.19543
+[Epoch 53] speed: 363.00 samples/sec	time cost: 137.58 sec
+[Epoch 53] training: err=0.5005	loss=1.0922
+[Epoch 53] validation: err=0.1023
+Epoch[54] Batch [399]	Speed: 367.13 samples/sec	err=0.4842	lr=0.19524
+[Epoch 54] speed: 366.00 samples/sec	time cost: 136.37 sec
+[Epoch 54] training: err=0.4830	loss=1.0839
+[Epoch 54] validation: err=0.1164
+Epoch[55] Batch [399]	Speed: 362.51 samples/sec	err=0.4625	lr=0.19505
+[Epoch 55] speed: 364.00 samples/sec	time cost: 137.28 sec
+[Epoch 55] training: err=0.4675	loss=1.0943
+[Epoch 55] validation: err=0.1161
+Epoch[56] Batch [399]	Speed: 367.33 samples/sec	err=0.5173	lr=0.19485
+[Epoch 56] speed: 366.00 samples/sec	time cost: 136.46 sec
+[Epoch 56] training: err=0.5064	loss=1.0814
+[Epoch 56] validation: err=0.1020
+Epoch[57] Batch [399]	Speed: 365.16 samples/sec	err=0.4889	lr=0.19464
+[Epoch 57] speed: 366.00 samples/sec	time cost: 136.58 sec
+[Epoch 57] training: err=0.4856	loss=1.0768
+[Epoch 57] validation: err=0.0841
+Epoch[58] Batch [399]	Speed: 363.31 samples/sec	err=0.4846	lr=0.19444
+[Epoch 58] speed: 364.00 samples/sec	time cost: 137.18 sec
+[Epoch 58] training: err=0.4845	loss=1.0773
+[Epoch 58] validation: err=0.0982
+Epoch[59] Batch [399]	Speed: 367.50 samples/sec	err=0.4831	lr=0.19423
+[Epoch 59] speed: 366.00 samples/sec	time cost: 136.30 sec
+[Epoch 59] training: err=0.4857	loss=1.1078
+[Epoch 59] validation: err=0.1151
+Epoch[60] Batch [399]	Speed: 363.90 samples/sec	err=0.5072	lr=0.19401
+[Epoch 60] speed: 364.00 samples/sec	time cost: 137.15 sec
+[Epoch 60] training: err=0.5159	loss=1.0848
+[Epoch 60] validation: err=0.1141
+Epoch[61] Batch [399]	Speed: 369.16 samples/sec	err=0.5007	lr=0.19379
+[Epoch 61] speed: 367.00 samples/sec	time cost: 136.04 sec
+[Epoch 61] training: err=0.5159	loss=1.0730
+[Epoch 61] validation: err=0.0899
+Epoch[62] Batch [399]	Speed: 357.83 samples/sec	err=0.5034	lr=0.19357
+[Epoch 62] speed: 357.00 samples/sec	time cost: 140.00 sec
+[Epoch 62] training: err=0.5124	loss=1.0801
+[Epoch 62] validation: err=0.1135
+Epoch[63] Batch [399]	Speed: 352.32 samples/sec	err=0.5092	lr=0.19335
+[Epoch 63] speed: 353.00 samples/sec	time cost: 141.50 sec
+[Epoch 63] training: err=0.5112	loss=1.0758
+[Epoch 63] validation: err=0.0947
+Epoch[64] Batch [399]	Speed: 347.64 samples/sec	err=0.4856	lr=0.19312
+[Epoch 64] speed: 347.00 samples/sec	time cost: 143.71 sec
+[Epoch 64] training: err=0.4835	loss=1.1038
+[Epoch 64] validation: err=0.0954
+Epoch[65] Batch [399]	Speed: 350.01 samples/sec	err=0.5217	lr=0.19288
+[Epoch 65] speed: 350.00 samples/sec	time cost: 142.71 sec
+[Epoch 65] training: err=0.5165	loss=1.0719
+[Epoch 65] validation: err=0.1123
+Epoch[66] Batch [399]	Speed: 333.54 samples/sec	err=0.5145	lr=0.19265
+[Epoch 66] speed: 335.00 samples/sec	time cost: 148.83 sec
+[Epoch 66] training: err=0.5147	loss=1.0782
+[Epoch 66] validation: err=0.1163
+Epoch[67] Batch [399]	Speed: 351.36 samples/sec	err=0.4845	lr=0.19241
+[Epoch 67] speed: 351.00 samples/sec	time cost: 142.35 sec
+[Epoch 67] training: err=0.4791	loss=1.0843
+[Epoch 67] validation: err=0.0930
+Epoch[68] Batch [399]	Speed: 346.54 samples/sec	err=0.4935	lr=0.19216
+[Epoch 68] speed: 347.00 samples/sec	time cost: 143.69 sec
+[Epoch 68] training: err=0.4853	loss=1.0752
+[Epoch 68] validation: err=0.0925
+Epoch[69] Batch [399]	Speed: 349.56 samples/sec	err=0.4860	lr=0.19191
+[Epoch 69] speed: 350.00 samples/sec	time cost: 142.73 sec
+[Epoch 69] training: err=0.4887	loss=1.0946
+[Epoch 69] validation: err=0.1047
+Epoch[70] Batch [399]	Speed: 353.73 samples/sec	err=0.5058	lr=0.19166
+[Epoch 70] speed: 352.00 samples/sec	time cost: 141.71 sec
+[Epoch 70] training: err=0.5039	loss=1.0793
+[Epoch 70] validation: err=0.0861
+Epoch[71] Batch [399]	Speed: 353.47 samples/sec	err=0.5022	lr=0.19141
+[Epoch 71] speed: 352.00 samples/sec	time cost: 142.03 sec
+[Epoch 71] training: err=0.5031	loss=1.0874
+[Epoch 71] validation: err=0.1190
+Epoch[72] Batch [399]	Speed: 352.14 samples/sec	err=0.5142	lr=0.19115
+[Epoch 72] speed: 351.00 samples/sec	time cost: 142.08 sec
+[Epoch 72] training: err=0.5113	loss=1.0458
+[Epoch 72] validation: err=0.1102
+Epoch[73] Batch [399]	Speed: 352.98 samples/sec	err=0.5018	lr=0.19088
+[Epoch 73] speed: 354.00 samples/sec	time cost: 141.23 sec
+[Epoch 73] training: err=0.5047	loss=1.0607
+[Epoch 73] validation: err=0.1080
+Epoch[74] Batch [399]	Speed: 346.44 samples/sec	err=0.4622	lr=0.19062
+[Epoch 74] speed: 349.00 samples/sec	time cost: 143.09 sec
+[Epoch 74] training: err=0.4787	loss=1.0580
+[Epoch 74] validation: err=0.1091
+Epoch[75] Batch [399]	Speed: 349.84 samples/sec	err=0.4879	lr=0.19035
+[Epoch 75] speed: 350.00 samples/sec	time cost: 142.74 sec
+[Epoch 75] training: err=0.5012	loss=1.0425
+[Epoch 75] validation: err=0.1056
+Epoch[76] Batch [399]	Speed: 348.97 samples/sec	err=0.4782	lr=0.19007
+[Epoch 76] speed: 349.00 samples/sec	time cost: 142.87 sec
+[Epoch 76] training: err=0.4793	loss=1.0445
+[Epoch 76] validation: err=0.1016
+Epoch[77] Batch [399]	Speed: 346.57 samples/sec	err=0.5291	lr=0.18980
+[Epoch 77] speed: 341.00 samples/sec	time cost: 146.37 sec
+[Epoch 77] training: err=0.5226	loss=1.0705
+[Epoch 77] validation: err=0.1196
+Epoch[78] Batch [399]	Speed: 326.36 samples/sec	err=0.4910	lr=0.18952
+[Epoch 78] speed: 324.00 samples/sec	time cost: 154.17 sec
+[Epoch 78] training: err=0.4919	loss=1.0424
+[Epoch 78] validation: err=0.0936
+Epoch[79] Batch [399]	Speed: 336.84 samples/sec	err=0.5132	lr=0.18923
+[Epoch 79] speed: 340.00 samples/sec	time cost: 146.75 sec
+[Epoch 79] training: err=0.5067	loss=1.0436
+[Epoch 79] validation: err=0.1096
+Epoch[80] Batch [399]	Speed: 350.09 samples/sec	err=0.4810	lr=0.18894
+[Epoch 80] speed: 351.00 samples/sec	time cost: 142.45 sec
+[Epoch 80] training: err=0.4815	loss=1.0670
+[Epoch 80] validation: err=0.0918
+Epoch[81] Batch [399]	Speed: 352.68 samples/sec	err=0.5040	lr=0.18865
+[Epoch 81] speed: 351.00 samples/sec	time cost: 142.38 sec
+[Epoch 81] training: err=0.5037	loss=1.0465
+[Epoch 81] validation: err=0.0981
+Epoch[82] Batch [399]	Speed: 349.54 samples/sec	err=0.4882	lr=0.18835
+[Epoch 82] speed: 349.00 samples/sec	time cost: 143.00 sec
+[Epoch 82] training: err=0.4945	loss=1.0444
+[Epoch 82] validation: err=0.0865
+Epoch[83] Batch [399]	Speed: 353.07 samples/sec	err=0.4799	lr=0.18806
+[Epoch 83] speed: 353.00 samples/sec	time cost: 141.39 sec
+[Epoch 83] training: err=0.4752	loss=1.0674
+[Epoch 83] validation: err=0.0937
+Epoch[84] Batch [399]	Speed: 350.03 samples/sec	err=0.4976	lr=0.18775
+[Epoch 84] speed: 350.00 samples/sec	time cost: 142.74 sec
+[Epoch 84] training: err=0.4793	loss=1.0490
+[Epoch 84] validation: err=0.0914
+Epoch[85] Batch [399]	Speed: 331.75 samples/sec	err=0.4864	lr=0.18745
+[Epoch 85] speed: 335.00 samples/sec	time cost: 149.24 sec
+[Epoch 85] training: err=0.5009	loss=1.0889
+[Epoch 85] validation: err=0.1013
+Epoch[86] Batch [399]	Speed: 353.46 samples/sec	err=0.5213	lr=0.18714
+[Epoch 86] speed: 353.00 samples/sec	time cost: 141.58 sec
+[Epoch 86] training: err=0.5309	loss=1.0442
+[Epoch 86] validation: err=0.0911
+Epoch[87] Batch [399]	Speed: 348.12 samples/sec	err=0.4704	lr=0.18682
+[Epoch 87] speed: 347.00 samples/sec	time cost: 143.93 sec
+[Epoch 87] training: err=0.4789	loss=1.0413
+[Epoch 87] validation: err=0.0999
+Epoch[88] Batch [399]	Speed: 354.17 samples/sec	err=0.4883	lr=0.18651
+[Epoch 88] speed: 351.00 samples/sec	time cost: 142.32 sec
+[Epoch 88] training: err=0.4902	loss=1.0454
+[Epoch 88] validation: err=0.0872
+Epoch[89] Batch [399]	Speed: 352.46 samples/sec	err=0.4927	lr=0.18619
+[Epoch 89] speed: 352.00 samples/sec	time cost: 142.01 sec
+[Epoch 89] training: err=0.4886	loss=1.0421
+[Epoch 89] validation: err=0.1137
+Epoch[90] Batch [399]	Speed: 350.84 samples/sec	err=0.4869	lr=0.18586
+[Epoch 90] speed: 352.00 samples/sec	time cost: 141.86 sec
+[Epoch 90] training: err=0.4848	loss=1.0793
+[Epoch 90] validation: err=0.1153
+Epoch[91] Batch [399]	Speed: 348.52 samples/sec	err=0.5013	lr=0.18554
+[Epoch 91] speed: 349.00 samples/sec	time cost: 142.93 sec
+[Epoch 91] training: err=0.4904	loss=1.0662
+[Epoch 91] validation: err=0.0999
+Epoch[92] Batch [399]	Speed: 348.27 samples/sec	err=0.4999	lr=0.18521
+[Epoch 92] speed: 349.00 samples/sec	time cost: 143.19 sec
+[Epoch 92] training: err=0.4924	loss=1.0420
+[Epoch 92] validation: err=0.0823
+Epoch[93] Batch [399]	Speed: 350.15 samples/sec	err=0.5054	lr=0.18487
+[Epoch 93] speed: 350.00 samples/sec	time cost: 142.62 sec
+[Epoch 93] training: err=0.4934	loss=1.0649
+[Epoch 93] validation: err=0.0998
+Epoch[94] Batch [399]	Speed: 348.38 samples/sec	err=0.5078	lr=0.18454
+[Epoch 94] speed: 349.00 samples/sec	time cost: 143.11 sec
+[Epoch 94] training: err=0.5040	loss=1.0760
+[Epoch 94] validation: err=0.1000
+Epoch[95] Batch [399]	Speed: 348.01 samples/sec	err=0.5021	lr=0.18419
+[Epoch 95] speed: 349.00 samples/sec	time cost: 143.11 sec
+[Epoch 95] training: err=0.4986	loss=1.0318
+[Epoch 95] validation: err=0.0952
+Epoch[96] Batch [399]	Speed: 348.74 samples/sec	err=0.4846	lr=0.18385
+[Epoch 96] speed: 349.00 samples/sec	time cost: 143.20 sec
+[Epoch 96] training: err=0.4910	loss=1.0720
+[Epoch 96] validation: err=0.1081
+Epoch[97] Batch [399]	Speed: 350.36 samples/sec	err=0.5095	lr=0.18350
+[Epoch 97] speed: 348.00 samples/sec	time cost: 143.46 sec
+[Epoch 97] training: err=0.5038	loss=1.0488
+[Epoch 97] validation: err=0.1037
+Epoch[98] Batch [399]	Speed: 350.52 samples/sec	err=0.4907	lr=0.18315
+[Epoch 98] speed: 349.00 samples/sec	time cost: 143.25 sec
+[Epoch 98] training: err=0.4802	loss=1.0505
+[Epoch 98] validation: err=0.0913
+Epoch[99] Batch [399]	Speed: 348.81 samples/sec	err=0.5270	lr=0.18280
+[Epoch 99] speed: 348.00 samples/sec	time cost: 143.64 sec
+[Epoch 99] training: err=0.5286	loss=1.0632
+[Epoch 99] validation: err=0.0779
+Epoch[100] Batch [399]	Speed: 356.31 samples/sec	err=0.4924	lr=0.18244
+[Epoch 100] speed: 352.00 samples/sec	time cost: 141.95 sec
+[Epoch 100] training: err=0.4964	loss=1.0410
+[Epoch 100] validation: err=0.1133
+Epoch[101] Batch [399]	Speed: 349.70 samples/sec	err=0.4940	lr=0.18208
+[Epoch 101] speed: 349.00 samples/sec	time cost: 142.95 sec
+[Epoch 101] training: err=0.4965	loss=1.0388
+[Epoch 101] validation: err=0.0914
+Epoch[102] Batch [399]	Speed: 353.42 samples/sec	err=0.4956	lr=0.18172
+[Epoch 102] speed: 353.00 samples/sec	time cost: 141.36 sec
+[Epoch 102] training: err=0.4999	loss=1.0487
+[Epoch 102] validation: err=0.0940
+Epoch[103] Batch [399]	Speed: 350.30 samples/sec	err=0.4785	lr=0.18135
+[Epoch 103] speed: 349.00 samples/sec	time cost: 143.00 sec
+[Epoch 103] training: err=0.4753	loss=1.0430
+[Epoch 103] validation: err=0.0963
+Epoch[104] Batch [399]	Speed: 342.55 samples/sec	err=0.4774	lr=0.18098
+[Epoch 104] speed: 336.00 samples/sec	time cost: 148.49 sec
+[Epoch 104] training: err=0.4872	loss=1.0562
+[Epoch 104] validation: err=0.0879
+Epoch[105] Batch [399]	Speed: 350.18 samples/sec	err=0.4710	lr=0.18060
+[Epoch 105] speed: 350.00 samples/sec	time cost: 142.50 sec
+[Epoch 105] training: err=0.4804	loss=1.0307
+[Epoch 105] validation: err=0.0946
+Epoch[106] Batch [399]	Speed: 347.57 samples/sec	err=0.4779	lr=0.18023
+[Epoch 106] speed: 350.00 samples/sec	time cost: 142.84 sec
+[Epoch 106] training: err=0.4791	loss=1.0348
+[Epoch 106] validation: err=0.0786
+Epoch[107] Batch [399]	Speed: 347.63 samples/sec	err=0.4828	lr=0.17985
+[Epoch 107] speed: 348.00 samples/sec	time cost: 143.56 sec
+[Epoch 107] training: err=0.4828	loss=1.0571
+[Epoch 107] validation: err=0.0808
+Epoch[108] Batch [399]	Speed: 350.12 samples/sec	err=0.5112	lr=0.17946
+[Epoch 108] speed: 349.00 samples/sec	time cost: 143.08 sec
+[Epoch 108] training: err=0.5067	loss=1.0523
+[Epoch 108] validation: err=0.0863
+Epoch[109] Batch [399]	Speed: 350.55 samples/sec	err=0.5001	lr=0.17907
+[Epoch 109] speed: 349.00 samples/sec	time cost: 143.03 sec
+[Epoch 109] training: err=0.5060	loss=1.0551
+[Epoch 109] validation: err=0.1165
+Epoch[110] Batch [399]	Speed: 348.91 samples/sec	err=0.4724	lr=0.17868
+[Epoch 110] speed: 348.00 samples/sec	time cost: 143.65 sec
+[Epoch 110] training: err=0.4855	loss=1.0129
+[Epoch 110] validation: err=0.0937
+Epoch[111] Batch [399]	Speed: 345.87 samples/sec	err=0.4929	lr=0.17829
+[Epoch 111] speed: 348.00 samples/sec	time cost: 143.59 sec
+[Epoch 111] training: err=0.4910	loss=1.0391
+[Epoch 111] validation: err=0.1006
+Epoch[112] Batch [399]	Speed: 348.01 samples/sec	err=0.4801	lr=0.17789
+[Epoch 112] speed: 349.00 samples/sec	time cost: 143.07 sec
+[Epoch 112] training: err=0.4757	loss=1.0143
+[Epoch 112] validation: err=0.0998
+Epoch[113] Batch [399]	Speed: 345.85 samples/sec	err=0.4930	lr=0.17750
+[Epoch 113] speed: 347.00 samples/sec	time cost: 143.93 sec
+[Epoch 113] training: err=0.4931	loss=1.0508
+[Epoch 113] validation: err=0.1027
+Epoch[114] Batch [399]	Speed: 344.21 samples/sec	err=0.5009	lr=0.17709
+[Epoch 114] speed: 345.00 samples/sec	time cost: 144.93 sec
+[Epoch 114] training: err=0.4915	loss=1.0526
+[Epoch 114] validation: err=0.0860
+Epoch[115] Batch [399]	Speed: 342.25 samples/sec	err=0.4734	lr=0.17669
+[Epoch 115] speed: 344.00 samples/sec	time cost: 144.94 sec
+[Epoch 115] training: err=0.4850	loss=1.0294
+[Epoch 115] validation: err=0.1009
+Epoch[116] Batch [399]	Speed: 350.96 samples/sec	err=0.4949	lr=0.17628
+[Epoch 116] speed: 350.00 samples/sec	time cost: 142.59 sec
+[Epoch 116] training: err=0.4927	loss=1.0492
+[Epoch 116] validation: err=0.1160
+Epoch[117] Batch [399]	Speed: 350.53 samples/sec	err=0.4853	lr=0.17587
+[Epoch 117] speed: 350.00 samples/sec	time cost: 142.69 sec
+[Epoch 117] training: err=0.4898	loss=1.0390
+[Epoch 117] validation: err=0.0784
+Epoch[118] Batch [399]	Speed: 345.08 samples/sec	err=0.4813	lr=0.17545
+[Epoch 118] speed: 347.00 samples/sec	time cost: 143.89 sec
+[Epoch 118] training: err=0.4820	loss=1.0404
+[Epoch 118] validation: err=0.0837
+Epoch[119] Batch [399]	Speed: 346.22 samples/sec	err=0.5053	lr=0.17503
+[Epoch 119] speed: 348.00 samples/sec	time cost: 143.63 sec
+[Epoch 119] training: err=0.4945	loss=1.0393
+[Epoch 119] validation: err=0.1003
+Epoch[120] Batch [399]	Speed: 347.59 samples/sec	err=0.4927	lr=0.17461
+[Epoch 120] speed: 349.00 samples/sec	time cost: 142.95 sec
+[Epoch 120] training: err=0.4950	loss=1.0584
+[Epoch 120] validation: err=0.0888
+Epoch[121] Batch [399]	Speed: 348.77 samples/sec	err=0.5097	lr=0.17419
+[Epoch 121] speed: 349.00 samples/sec	time cost: 142.88 sec
+[Epoch 121] training: err=0.5107	loss=1.0332
+[Epoch 121] validation: err=0.0782
+Epoch[122] Batch [399]	Speed: 345.24 samples/sec	err=0.4911	lr=0.17376
+[Epoch 122] speed: 346.00 samples/sec	time cost: 144.13 sec
+[Epoch 122] training: err=0.4892	loss=1.0146
+[Epoch 122] validation: err=0.0942
+Epoch[123] Batch [399]	Speed: 350.92 samples/sec	err=0.4913	lr=0.17333
+[Epoch 123] speed: 347.00 samples/sec	time cost: 144.08 sec
+[Epoch 123] training: err=0.4886	loss=1.0228
+[Epoch 123] validation: err=0.1004
+Epoch[124] Batch [399]	Speed: 342.25 samples/sec	err=0.4716	lr=0.17290
+[Epoch 124] speed: 345.00 samples/sec	time cost: 144.79 sec
+[Epoch 124] training: err=0.4714	loss=1.0151
+[Epoch 124] validation: err=0.0884
+Epoch[125] Batch [399]	Speed: 348.61 samples/sec	err=0.4887	lr=0.17246
+[Epoch 125] speed: 350.00 samples/sec	time cost: 142.62 sec
+[Epoch 125] training: err=0.4981	loss=1.0099
+[Epoch 125] validation: err=0.1003
+Epoch[126] Batch [399]	Speed: 349.90 samples/sec	err=0.5032	lr=0.17202
+[Epoch 126] speed: 349.00 samples/sec	time cost: 142.94 sec
+[Epoch 126] training: err=0.5134	loss=1.0402
+[Epoch 126] validation: err=0.0971
+Epoch[127] Batch [399]	Speed: 348.44 samples/sec	err=0.4934	lr=0.17158
+[Epoch 127] speed: 349.00 samples/sec	time cost: 143.07 sec
+[Epoch 127] training: err=0.4739	loss=1.0234
+[Epoch 127] validation: err=0.0893
+Epoch[128] Batch [399]	Speed: 342.65 samples/sec	err=0.4715	lr=0.17114
+[Epoch 128] speed: 345.00 samples/sec	time cost: 144.53 sec
+[Epoch 128] training: err=0.4699	loss=1.0486
+[Epoch 128] validation: err=0.0955
+Epoch[129] Batch [399]	Speed: 340.08 samples/sec	err=0.4850	lr=0.17069
+[Epoch 129] speed: 343.00 samples/sec	time cost: 145.61 sec
+[Epoch 129] training: err=0.4804	loss=1.0371
+[Epoch 129] validation: err=0.0964
+Epoch[130] Batch [399]	Speed: 351.58 samples/sec	err=0.4894	lr=0.17024
+[Epoch 130] speed: 350.00 samples/sec	time cost: 142.57 sec
+[Epoch 130] training: err=0.4716	loss=1.0252
+[Epoch 130] validation: err=0.0849
+Epoch[131] Batch [399]	Speed: 346.98 samples/sec	err=0.4825	lr=0.16979
+[Epoch 131] speed: 348.00 samples/sec	time cost: 143.27 sec
+[Epoch 131] training: err=0.4830	loss=1.0415
+[Epoch 131] validation: err=0.0932
+Epoch[132] Batch [399]	Speed: 347.56 samples/sec	err=0.4735	lr=0.16933
+[Epoch 132] speed: 347.00 samples/sec	time cost: 143.70 sec
+[Epoch 132] training: err=0.4853	loss=1.0382
+[Epoch 132] validation: err=0.0843
+Epoch[133] Batch [399]	Speed: 348.11 samples/sec	err=0.5132	lr=0.16887
+[Epoch 133] speed: 349.00 samples/sec	time cost: 143.03 sec
+[Epoch 133] training: err=0.5061	loss=1.0399
+[Epoch 133] validation: err=0.0850
+Epoch[134] Batch [399]	Speed: 344.11 samples/sec	err=0.4961	lr=0.16841
+[Epoch 134] speed: 345.00 samples/sec	time cost: 144.62 sec
+[Epoch 134] training: err=0.4923	loss=1.0178
+[Epoch 134] validation: err=0.1036
+Epoch[135] Batch [399]	Speed: 344.03 samples/sec	err=0.4806	lr=0.16795
+[Epoch 135] speed: 347.00 samples/sec	time cost: 144.07 sec
+[Epoch 135] training: err=0.4782	loss=1.0145
+[Epoch 135] validation: err=0.0919
+Epoch[136] Batch [399]	Speed: 347.65 samples/sec	err=0.4927	lr=0.16748
+[Epoch 136] speed: 349.00 samples/sec	time cost: 142.94 sec
+[Epoch 136] training: err=0.4861	loss=1.0431
+[Epoch 136] validation: err=0.0772
+Epoch[137] Batch [399]	Speed: 346.43 samples/sec	err=0.5099	lr=0.16701
+[Epoch 137] speed: 346.00 samples/sec	time cost: 144.24 sec
+[Epoch 137] training: err=0.5016	loss=1.0233
+[Epoch 137] validation: err=0.0959
+Epoch[138] Batch [399]	Speed: 347.92 samples/sec	err=0.4689	lr=0.16654
+[Epoch 138] speed: 349.00 samples/sec	time cost: 143.06 sec
+[Epoch 138] training: err=0.4774	loss=0.9964
+[Epoch 138] validation: err=0.0901
+Epoch[139] Batch [399]	Speed: 345.66 samples/sec	err=0.4712	lr=0.16606
+[Epoch 139] speed: 347.00 samples/sec	time cost: 143.74 sec
+[Epoch 139] training: err=0.4737	loss=1.0137
+[Epoch 139] validation: err=0.0841
+Epoch[140] Batch [399]	Speed: 347.42 samples/sec	err=0.5252	lr=0.16558
+[Epoch 140] speed: 349.00 samples/sec	time cost: 143.26 sec
+[Epoch 140] training: err=0.5117	loss=0.9694
+[Epoch 140] validation: err=0.0703
+Epoch[141] Batch [399]	Speed: 346.80 samples/sec	err=0.4851	lr=0.16510
+[Epoch 141] speed: 348.00 samples/sec	time cost: 143.41 sec
+[Epoch 141] training: err=0.4896	loss=1.0226
+[Epoch 141] validation: err=0.0733
+Epoch[142] Batch [399]	Speed: 349.73 samples/sec	err=0.4988	lr=0.16462
+[Epoch 142] speed: 350.00 samples/sec	time cost: 142.51 sec
+[Epoch 142] training: err=0.4898	loss=1.0158
+[Epoch 142] validation: err=0.0798
+Epoch[143] Batch [399]	Speed: 330.24 samples/sec	err=0.4940	lr=0.16413
+[Epoch 143] speed: 333.00 samples/sec	time cost: 150.06 sec
+[Epoch 143] training: err=0.4823	loss=1.0138
+[Epoch 143] validation: err=0.0892
+Epoch[144] Batch [399]	Speed: 352.60 samples/sec	err=0.5090	lr=0.16365
+[Epoch 144] speed: 351.00 samples/sec	time cost: 142.42 sec
+[Epoch 144] training: err=0.4988	loss=1.0076
+[Epoch 144] validation: err=0.0889
+Epoch[145] Batch [399]	Speed: 349.39 samples/sec	err=0.4922	lr=0.16315
+[Epoch 145] speed: 351.00 samples/sec	time cost: 142.40 sec
+[Epoch 145] training: err=0.4983	loss=1.0154
+[Epoch 145] validation: err=0.0871
+Epoch[146] Batch [399]	Speed: 348.08 samples/sec	err=0.4685	lr=0.16266
+[Epoch 146] speed: 349.00 samples/sec	time cost: 143.12 sec
+[Epoch 146] training: err=0.4636	loss=0.9829
+[Epoch 146] validation: err=0.0985
+Epoch[147] Batch [399]	Speed: 349.72 samples/sec	err=0.4798	lr=0.16217
+[Epoch 147] speed: 350.00 samples/sec	time cost: 142.51 sec
+[Epoch 147] training: err=0.4862	loss=1.0242
+[Epoch 147] validation: err=0.0857
+Epoch[148] Batch [399]	Speed: 352.83 samples/sec	err=0.5322	lr=0.16167
+[Epoch 148] speed: 352.00 samples/sec	time cost: 141.82 sec
+[Epoch 148] training: err=0.5279	loss=0.9975
+[Epoch 148] validation: err=0.0749
+Epoch[149] Batch [399]	Speed: 350.97 samples/sec	err=0.4876	lr=0.16117
+[Epoch 149] speed: 350.00 samples/sec	time cost: 142.82 sec
+[Epoch 149] training: err=0.4919	loss=1.0141
+[Epoch 149] validation: err=0.1058
+Epoch[150] Batch [399]	Speed: 347.84 samples/sec	err=0.5150	lr=0.16066
+[Epoch 150] speed: 348.00 samples/sec	time cost: 143.48 sec
+[Epoch 150] training: err=0.5122	loss=1.0278
+[Epoch 150] validation: err=0.0754
+Epoch[151] Batch [399]	Speed: 349.71 samples/sec	err=0.4987	lr=0.16016
+[Epoch 151] speed: 349.00 samples/sec	time cost: 142.90 sec
+[Epoch 151] training: err=0.4975	loss=1.0178
+[Epoch 151] validation: err=0.1081
+Epoch[152] Batch [399]	Speed: 350.82 samples/sec	err=0.4837	lr=0.15965
+[Epoch 152] speed: 351.00 samples/sec	time cost: 142.36 sec
+[Epoch 152] training: err=0.4719	loss=1.0282
+[Epoch 152] validation: err=0.0966
+Epoch[153] Batch [399]	Speed: 351.58 samples/sec	err=0.4895	lr=0.15914
+[Epoch 153] speed: 352.00 samples/sec	time cost: 141.75 sec
+[Epoch 153] training: err=0.4850	loss=0.9918
+[Epoch 153] validation: err=0.1085
+Epoch[154] Batch [399]	Speed: 347.71 samples/sec	err=0.5059	lr=0.15863
+[Epoch 154] speed: 349.00 samples/sec	time cost: 143.24 sec
+[Epoch 154] training: err=0.5066	loss=0.9775
+[Epoch 154] validation: err=0.0903
+Epoch[155] Batch [399]	Speed: 349.37 samples/sec	err=0.4680	lr=0.15811
+[Epoch 155] speed: 349.00 samples/sec	time cost: 142.88 sec
+[Epoch 155] training: err=0.4779	loss=1.0109
+[Epoch 155] validation: err=0.0779
+Epoch[156] Batch [399]	Speed: 347.78 samples/sec	err=0.5165	lr=0.15759
+[Epoch 156] speed: 348.00 samples/sec	time cost: 143.57 sec
+[Epoch 156] training: err=0.5035	loss=1.0021
+[Epoch 156] validation: err=0.0834
+Epoch[157] Batch [399]	Speed: 349.17 samples/sec	err=0.4980	lr=0.15707
+[Epoch 157] speed: 349.00 samples/sec	time cost: 142.94 sec
+[Epoch 157] training: err=0.4841	loss=1.0177
+[Epoch 157] validation: err=0.0850
+Epoch[158] Batch [399]	Speed: 349.04 samples/sec	err=0.4858	lr=0.15655
+[Epoch 158] speed: 349.00 samples/sec	time cost: 143.01 sec
+[Epoch 158] training: err=0.4881	loss=1.0073
+[Epoch 158] validation: err=0.0785
+Epoch[159] Batch [399]	Speed: 351.11 samples/sec	err=0.5110	lr=0.15603
+[Epoch 159] speed: 352.00 samples/sec	time cost: 141.75 sec
+[Epoch 159] training: err=0.4995	loss=1.0079
+[Epoch 159] validation: err=0.0772
+Epoch[160] Batch [399]	Speed: 347.64 samples/sec	err=0.5003	lr=0.15550
+[Epoch 160] speed: 349.00 samples/sec	time cost: 143.06 sec
+[Epoch 160] training: err=0.4915	loss=1.0142
+[Epoch 160] validation: err=0.0996
+Epoch[161] Batch [399]	Speed: 347.51 samples/sec	err=0.4653	lr=0.15497
+[Epoch 161] speed: 348.00 samples/sec	time cost: 143.65 sec
+[Epoch 161] training: err=0.4645	loss=0.9981
+[Epoch 161] validation: err=0.0927
+Epoch[162] Batch [399]	Speed: 330.31 samples/sec	err=0.4781	lr=0.15444
+[Epoch 162] speed: 335.00 samples/sec	time cost: 149.05 sec
+[Epoch 162] training: err=0.4862	loss=1.0172
+[Epoch 162] validation: err=0.0938
+Epoch[163] Batch [399]	Speed: 354.63 samples/sec	err=0.4716	lr=0.15390
+[Epoch 163] speed: 353.00 samples/sec	time cost: 141.38 sec
+[Epoch 163] training: err=0.4712	loss=0.9998
+[Epoch 163] validation: err=0.0801
+Epoch[164] Batch [399]	Speed: 351.15 samples/sec	err=0.4980	lr=0.15337
+[Epoch 164] speed: 350.00 samples/sec	time cost: 142.49 sec
+[Epoch 164] training: err=0.4999	loss=1.0113
+[Epoch 164] validation: err=0.0868
+Epoch[165] Batch [399]	Speed: 350.19 samples/sec	err=0.4831	lr=0.15283
+[Epoch 165] speed: 351.00 samples/sec	time cost: 142.34 sec
+[Epoch 165] training: err=0.4699	loss=0.9972
+[Epoch 165] validation: err=0.0858
+Epoch[166] Batch [399]	Speed: 351.06 samples/sec	err=0.4914	lr=0.15229
+[Epoch 166] speed: 351.00 samples/sec	time cost: 142.27 sec
+[Epoch 166] training: err=0.4863	loss=1.0106
+[Epoch 166] validation: err=0.0916
+Epoch[167] Batch [399]	Speed: 348.60 samples/sec	err=0.4936	lr=0.15175
+[Epoch 167] speed: 348.00 samples/sec	time cost: 143.50 sec
+[Epoch 167] training: err=0.4905	loss=0.9994
+[Epoch 167] validation: err=0.0829
+Epoch[168] Batch [399]	Speed: 349.82 samples/sec	err=0.4752	lr=0.15121
+[Epoch 168] speed: 351.00 samples/sec	time cost: 142.29 sec
+[Epoch 168] training: err=0.4867	loss=1.0430
+[Epoch 168] validation: err=0.0771
+Epoch[169] Batch [399]	Speed: 348.30 samples/sec	err=0.4937	lr=0.15066
+[Epoch 169] speed: 350.00 samples/sec	time cost: 142.55 sec
+[Epoch 169] training: err=0.4913	loss=0.9957
+[Epoch 169] validation: err=0.0839
+Epoch[170] Batch [399]	Speed: 347.39 samples/sec	err=0.4545	lr=0.15011
+[Epoch 170] speed: 348.00 samples/sec	time cost: 143.60 sec
+[Epoch 170] training: err=0.4575	loss=0.9515
+[Epoch 170] validation: err=0.0722
+Epoch[171] Batch [399]	Speed: 348.50 samples/sec	err=0.4923	lr=0.14956
+[Epoch 171] speed: 348.00 samples/sec	time cost: 143.34 sec
+[Epoch 171] training: err=0.4893	loss=0.9976
+[Epoch 171] validation: err=0.0870
+Epoch[172] Batch [399]	Speed: 349.15 samples/sec	err=0.4791	lr=0.14901
+[Epoch 172] speed: 350.00 samples/sec	time cost: 142.61 sec
+[Epoch 172] training: err=0.4782	loss=0.9848
+[Epoch 172] validation: err=0.0777
+Epoch[173] Batch [399]	Speed: 346.57 samples/sec	err=0.4621	lr=0.14845
+[Epoch 173] speed: 347.00 samples/sec	time cost: 143.82 sec
+[Epoch 173] training: err=0.4644	loss=1.0102
+[Epoch 173] validation: err=0.1034
+Epoch[174] Batch [399]	Speed: 346.16 samples/sec	err=0.5066	lr=0.14790
+[Epoch 174] speed: 346.00 samples/sec	time cost: 144.32 sec
+[Epoch 174] training: err=0.5072	loss=1.0025
+[Epoch 174] validation: err=0.0798
+Epoch[175] Batch [399]	Speed: 347.72 samples/sec	err=0.4741	lr=0.14734
+[Epoch 175] speed: 349.00 samples/sec	time cost: 143.22 sec
+[Epoch 175] training: err=0.4656	loss=0.9801
+[Epoch 175] validation: err=0.0785
+Epoch[176] Batch [399]	Speed: 347.97 samples/sec	err=0.4779	lr=0.14678
+[Epoch 176] speed: 349.00 samples/sec	time cost: 143.15 sec
+[Epoch 176] training: err=0.4838	loss=1.0241
+[Epoch 176] validation: err=0.0782
+Epoch[177] Batch [399]	Speed: 347.14 samples/sec	err=0.4798	lr=0.14622
+[Epoch 177] speed: 348.00 samples/sec	time cost: 143.58 sec
+[Epoch 177] training: err=0.4819	loss=0.9884
+[Epoch 177] validation: err=0.0756
+Epoch[178] Batch [399]	Speed: 344.69 samples/sec	err=0.4827	lr=0.14565
+[Epoch 178] speed: 346.00 samples/sec	time cost: 144.17 sec
+[Epoch 178] training: err=0.4755	loss=0.9897
+[Epoch 178] validation: err=0.0820
+Epoch[179] Batch [399]	Speed: 346.59 samples/sec	err=0.4946	lr=0.14509
+[Epoch 179] speed: 348.00 samples/sec	time cost: 143.66 sec
+[Epoch 179] training: err=0.5002	loss=1.0033
+[Epoch 179] validation: err=0.0813
+Epoch[180] Batch [399]	Speed: 346.61 samples/sec	err=0.4921	lr=0.14452
+[Epoch 180] speed: 347.00 samples/sec	time cost: 143.76 sec
+[Epoch 180] training: err=0.4847	loss=1.0143
+[Epoch 180] validation: err=0.0823
+Epoch[181] Batch [399]	Speed: 335.71 samples/sec	err=0.4997	lr=0.14395
+[Epoch 181] speed: 335.00 samples/sec	time cost: 148.81 sec
+[Epoch 181] training: err=0.5022	loss=1.0246
+[Epoch 181] validation: err=0.0938
+Epoch[182] Batch [399]	Speed: 350.41 samples/sec	err=0.4868	lr=0.14338
+[Epoch 182] speed: 347.00 samples/sec	time cost: 143.73 sec
+[Epoch 182] training: err=0.4866	loss=0.9959
+[Epoch 182] validation: err=0.0894
+Epoch[183] Batch [399]	Speed: 351.12 samples/sec	err=0.4680	lr=0.14281
+[Epoch 183] speed: 350.00 samples/sec	time cost: 142.67 sec
+[Epoch 183] training: err=0.4762	loss=0.9986
+[Epoch 183] validation: err=0.0698
+Epoch[184] Batch [399]	Speed: 350.15 samples/sec	err=0.4854	lr=0.14223
+[Epoch 184] speed: 349.00 samples/sec	time cost: 143.24 sec
+[Epoch 184] training: err=0.4800	loss=0.9523
+[Epoch 184] validation: err=0.0832
+Epoch[185] Batch [399]	Speed: 351.61 samples/sec	err=0.5079	lr=0.14166
+[Epoch 185] speed: 349.00 samples/sec	time cost: 143.24 sec
+[Epoch 185] training: err=0.5056	loss=0.9887
+[Epoch 185] validation: err=0.0827
+Epoch[186] Batch [399]	Speed: 351.36 samples/sec	err=0.4902	lr=0.14108
+[Epoch 186] speed: 349.00 samples/sec	time cost: 143.17 sec
+[Epoch 186] training: err=0.4886	loss=0.9785
+[Epoch 186] validation: err=0.0714
+Epoch[187] Batch [399]	Speed: 347.89 samples/sec	err=0.5007	lr=0.14050
+[Epoch 187] speed: 347.00 samples/sec	time cost: 143.89 sec
+[Epoch 187] training: err=0.5034	loss=0.9651
+[Epoch 187] validation: err=0.0696
+Epoch[188] Batch [399]	Speed: 351.75 samples/sec	err=0.4510	lr=0.13992
+[Epoch 188] speed: 352.00 samples/sec	time cost: 141.91 sec
+[Epoch 188] training: err=0.4467	loss=0.9684
+[Epoch 188] validation: err=0.0868
+Epoch[189] Batch [399]	Speed: 349.52 samples/sec	err=0.4951	lr=0.13934
+[Epoch 189] speed: 350.00 samples/sec	time cost: 142.64 sec
+[Epoch 189] training: err=0.4943	loss=0.9807
+[Epoch 189] validation: err=0.0838
+Epoch[190] Batch [399]	Speed: 349.79 samples/sec	err=0.5074	lr=0.13875
+[Epoch 190] speed: 350.00 samples/sec	time cost: 142.61 sec
+[Epoch 190] training: err=0.5038	loss=0.9710
+[Epoch 190] validation: err=0.1458
+Epoch[191] Batch [399]	Speed: 349.93 samples/sec	err=0.4892	lr=0.13817
+[Epoch 191] speed: 350.00 samples/sec	time cost: 142.69 sec
+[Epoch 191] training: err=0.4935	loss=1.0140
+[Epoch 191] validation: err=0.0722
+Epoch[192] Batch [399]	Speed: 348.84 samples/sec	err=0.4730	lr=0.13758
+[Epoch 192] speed: 348.00 samples/sec	time cost: 143.27 sec
+[Epoch 192] training: err=0.4761	loss=0.9835
+[Epoch 192] validation: err=0.0808
+Epoch[193] Batch [399]	Speed: 347.90 samples/sec	err=0.4748	lr=0.13699
+[Epoch 193] speed: 348.00 samples/sec	time cost: 143.55 sec
+[Epoch 193] training: err=0.4794	loss=0.9684
+[Epoch 193] validation: err=0.0890
+Epoch[194] Batch [399]	Speed: 344.47 samples/sec	err=0.4841	lr=0.13640
+[Epoch 194] speed: 347.00 samples/sec	time cost: 143.83 sec
+[Epoch 194] training: err=0.4862	loss=0.9923
+[Epoch 194] validation: err=0.0915
+Epoch[195] Batch [399]	Speed: 346.46 samples/sec	err=0.4901	lr=0.13581
+[Epoch 195] speed: 348.00 samples/sec	time cost: 143.30 sec
+[Epoch 195] training: err=0.4979	loss=0.9643
+[Epoch 195] validation: err=0.0736
+Epoch[196] Batch [399]	Speed: 345.13 samples/sec	err=0.4748	lr=0.13522
+[Epoch 196] speed: 347.00 samples/sec	time cost: 144.01 sec
+[Epoch 196] training: err=0.4686	loss=0.9895
+[Epoch 196] validation: err=0.0727
+Epoch[197] Batch [399]	Speed: 344.86 samples/sec	err=0.4793	lr=0.13462
+[Epoch 197] speed: 345.00 samples/sec	time cost: 144.62 sec
+[Epoch 197] training: err=0.4769	loss=0.9940
+[Epoch 197] validation: err=0.0797
+Epoch[198] Batch [399]	Speed: 347.87 samples/sec	err=0.4755	lr=0.13402
+[Epoch 198] speed: 349.00 samples/sec	time cost: 143.21 sec
+[Epoch 198] training: err=0.4721	loss=0.9881
+[Epoch 198] validation: err=0.0733
+Epoch[199] Batch [399]	Speed: 349.64 samples/sec	err=0.5240	lr=0.13343
+[Epoch 199] speed: 350.00 samples/sec	time cost: 142.75 sec
+[Epoch 199] training: err=0.5181	loss=0.9816
+[Epoch 199] validation: err=0.0783
+Epoch[200] Batch [399]	Speed: 337.11 samples/sec	err=0.5022	lr=0.13283
+[Epoch 200] speed: 334.00 samples/sec	time cost: 149.48 sec
+[Epoch 200] training: err=0.4960	loss=0.9960
+[Epoch 200] validation: err=0.0682
+Epoch[201] Batch [399]	Speed: 350.52 samples/sec	err=0.4745	lr=0.13223
+[Epoch 201] speed: 351.00 samples/sec	time cost: 142.43 sec
+[Epoch 201] training: err=0.4753	loss=1.0029
+[Epoch 201] validation: err=0.0705
+Epoch[202] Batch [399]	Speed: 352.02 samples/sec	err=0.4894	lr=0.13163
+[Epoch 202] speed: 350.00 samples/sec	time cost: 142.47 sec
+[Epoch 202] training: err=0.4803	loss=0.9952
+[Epoch 202] validation: err=0.0665
+Epoch[203] Batch [399]	Speed: 353.60 samples/sec	err=0.4849	lr=0.13102
+[Epoch 203] speed: 353.00 samples/sec	time cost: 141.47 sec
+[Epoch 203] training: err=0.4770	loss=0.9621
+[Epoch 203] validation: err=0.0771
+Epoch[204] Batch [399]	Speed: 350.09 samples/sec	err=0.4996	lr=0.13042
+[Epoch 204] speed: 350.00 samples/sec	time cost: 142.81 sec
+[Epoch 204] training: err=0.4900	loss=0.9649
+[Epoch 204] validation: err=0.0779
+Epoch[205] Batch [399]	Speed: 352.69 samples/sec	err=0.5030	lr=0.12981
+[Epoch 205] speed: 351.00 samples/sec	time cost: 142.05 sec
+[Epoch 205] training: err=0.4984	loss=0.9778
+[Epoch 205] validation: err=0.0740
+Epoch[206] Batch [399]	Speed: 350.74 samples/sec	err=0.4922	lr=0.12921
+[Epoch 206] speed: 351.00 samples/sec	time cost: 142.43 sec
+[Epoch 206] training: err=0.4880	loss=0.9835
+[Epoch 206] validation: err=0.0807
+Epoch[207] Batch [399]	Speed: 353.19 samples/sec	err=0.4742	lr=0.12860
+[Epoch 207] speed: 353.00 samples/sec	time cost: 141.53 sec
+[Epoch 207] training: err=0.4684	loss=0.9898
+[Epoch 207] validation: err=0.0789
+Epoch[208] Batch [399]	Speed: 351.71 samples/sec	err=0.4538	lr=0.12799
+[Epoch 208] speed: 352.00 samples/sec	time cost: 141.72 sec
+[Epoch 208] training: err=0.4655	loss=0.9704
+[Epoch 208] validation: err=0.0722
+Epoch[209] Batch [399]	Speed: 347.61 samples/sec	err=0.4737	lr=0.12738
+[Epoch 209] speed: 348.00 samples/sec	time cost: 143.48 sec
+[Epoch 209] training: err=0.4792	loss=0.9732
+[Epoch 209] validation: err=0.0883
+Epoch[210] Batch [399]	Speed: 348.81 samples/sec	err=0.4604	lr=0.12677
+[Epoch 210] speed: 349.00 samples/sec	time cost: 142.94 sec
+[Epoch 210] training: err=0.4721	loss=0.9702
+[Epoch 210] validation: err=0.0823
+Epoch[211] Batch [399]	Speed: 346.75 samples/sec	err=0.4623	lr=0.12616
+[Epoch 211] speed: 347.00 samples/sec	time cost: 143.90 sec
+[Epoch 211] training: err=0.4618	loss=0.9761
+[Epoch 211] validation: err=0.0698
+Epoch[212] Batch [399]	Speed: 345.58 samples/sec	err=0.4707	lr=0.12555
+[Epoch 212] speed: 347.00 samples/sec	time cost: 143.75 sec
+[Epoch 212] training: err=0.4687	loss=0.9668
+[Epoch 212] validation: err=0.0867
+Epoch[213] Batch [399]	Speed: 344.95 samples/sec	err=0.4778	lr=0.12493
+[Epoch 213] speed: 347.00 samples/sec	time cost: 143.94 sec
+[Epoch 213] training: err=0.4863	loss=0.9666
+[Epoch 213] validation: err=0.0813
+Epoch[214] Batch [399]	Speed: 348.72 samples/sec	err=0.4797	lr=0.12432
+[Epoch 214] speed: 349.00 samples/sec	time cost: 143.25 sec
+[Epoch 214] training: err=0.4766	loss=0.9800
+[Epoch 214] validation: err=0.0783
+Epoch[215] Batch [399]	Speed: 348.70 samples/sec	err=0.4992	lr=0.12370
+[Epoch 215] speed: 348.00 samples/sec	time cost: 143.55 sec
+[Epoch 215] training: err=0.4995	loss=0.9546
+[Epoch 215] validation: err=0.0728
+Epoch[216] Batch [399]	Speed: 349.56 samples/sec	err=0.4763	lr=0.12308
+[Epoch 216] speed: 350.00 samples/sec	time cost: 142.81 sec
+[Epoch 216] training: err=0.4743	loss=0.9805
+[Epoch 216] validation: err=0.0824
+Epoch[217] Batch [399]	Speed: 348.45 samples/sec	err=0.4982	lr=0.12247
+[Epoch 217] speed: 349.00 samples/sec	time cost: 142.87 sec
+[Epoch 217] training: err=0.5049	loss=0.9926
+[Epoch 217] validation: err=0.0682
+Epoch[218] Batch [399]	Speed: 347.96 samples/sec	err=0.4970	lr=0.12185
+[Epoch 218] speed: 349.00 samples/sec	time cost: 142.92 sec
+[Epoch 218] training: err=0.4936	loss=0.9818
+[Epoch 218] validation: err=0.0795
+Epoch[219] Batch [399]	Speed: 346.30 samples/sec	err=0.4690	lr=0.12123
+[Epoch 219] speed: 339.00 samples/sec	time cost: 147.45 sec
+[Epoch 219] training: err=0.4808	loss=0.9602
+[Epoch 219] validation: err=0.0718
+Epoch[220] Batch [399]	Speed: 351.62 samples/sec	err=0.4754	lr=0.12061
+[Epoch 220] speed: 351.00 samples/sec	time cost: 142.06 sec
+[Epoch 220] training: err=0.4719	loss=0.9370
+[Epoch 220] validation: err=0.0708
+Epoch[221] Batch [399]	Speed: 352.64 samples/sec	err=0.4952	lr=0.11998
+[Epoch 221] speed: 353.00 samples/sec	time cost: 141.63 sec
+[Epoch 221] training: err=0.4927	loss=0.9777
+[Epoch 221] validation: err=0.0735
+Epoch[222] Batch [399]	Speed: 352.48 samples/sec	err=0.4733	lr=0.11936
+[Epoch 222] speed: 352.00 samples/sec	time cost: 141.87 sec
+[Epoch 222] training: err=0.4796	loss=0.9521
+[Epoch 222] validation: err=0.0795
+Epoch[223] Batch [399]	Speed: 351.97 samples/sec	err=0.4935	lr=0.11874
+[Epoch 223] speed: 351.00 samples/sec	time cost: 142.06 sec
+[Epoch 223] training: err=0.4976	loss=0.9685
+[Epoch 223] validation: err=0.0695
+Epoch[224] Batch [399]	Speed: 353.04 samples/sec	err=0.4354	lr=0.11812
+[Epoch 224] speed: 351.00 samples/sec	time cost: 142.41 sec
+[Epoch 224] training: err=0.4531	loss=0.9298
+[Epoch 224] validation: err=0.0648
+Epoch[225] Batch [399]	Speed: 353.73 samples/sec	err=0.4839	lr=0.11749
+[Epoch 225] speed: 352.00 samples/sec	time cost: 141.66 sec
+[Epoch 225] training: err=0.4844	loss=0.9175
+[Epoch 225] validation: err=0.0809
+Epoch[226] Batch [399]	Speed: 350.95 samples/sec	err=0.4587	lr=0.11687
+[Epoch 226] speed: 350.00 samples/sec	time cost: 142.73 sec
+[Epoch 226] training: err=0.4586	loss=0.9636
+[Epoch 226] validation: err=0.0814
+Epoch[227] Batch [399]	Speed: 348.98 samples/sec	err=0.4971	lr=0.11624
+[Epoch 227] speed: 351.00 samples/sec	time cost: 142.36 sec
+[Epoch 227] training: err=0.4956	loss=0.9611
+[Epoch 227] validation: err=0.0688
+Epoch[228] Batch [399]	Speed: 349.14 samples/sec	err=0.4781	lr=0.11561
+[Epoch 228] speed: 351.00 samples/sec	time cost: 142.36 sec
+[Epoch 228] training: err=0.4779	loss=0.9520
+[Epoch 228] validation: err=0.0662
+Epoch[229] Batch [399]	Speed: 349.76 samples/sec	err=0.4801	lr=0.11499
+[Epoch 229] speed: 351.00 samples/sec	time cost: 142.41 sec
+[Epoch 229] training: err=0.4917	loss=0.9646
+[Epoch 229] validation: err=0.0702
+Epoch[230] Batch [399]	Speed: 347.42 samples/sec	err=0.4774	lr=0.11436
+[Epoch 230] speed: 349.00 samples/sec	time cost: 143.17 sec
+[Epoch 230] training: err=0.4727	loss=0.9364
+[Epoch 230] validation: err=0.0662
+Epoch[231] Batch [399]	Speed: 351.59 samples/sec	err=0.4680	lr=0.11373
+[Epoch 231] speed: 351.00 samples/sec	time cost: 142.35 sec
+[Epoch 231] training: err=0.4679	loss=0.9547
+[Epoch 231] validation: err=0.0672
+Epoch[232] Batch [399]	Speed: 344.61 samples/sec	err=0.4736	lr=0.11310
+[Epoch 232] speed: 346.00 samples/sec	time cost: 144.12 sec
+[Epoch 232] training: err=0.4607	loss=0.9272
+[Epoch 232] validation: err=0.0706
+Epoch[233] Batch [399]	Speed: 348.78 samples/sec	err=0.4938	lr=0.11247
+[Epoch 233] speed: 349.00 samples/sec	time cost: 142.88 sec
+[Epoch 233] training: err=0.4859	loss=0.9564
+[Epoch 233] validation: err=0.0656
+Epoch[234] Batch [399]	Speed: 349.84 samples/sec	err=0.4647	lr=0.11184
+[Epoch 234] speed: 351.00 samples/sec	time cost: 142.36 sec
+[Epoch 234] training: err=0.4661	loss=0.9469
+[Epoch 234] validation: err=0.0722
+Epoch[235] Batch [399]	Speed: 346.90 samples/sec	err=0.4888	lr=0.11121
+[Epoch 235] speed: 349.00 samples/sec	time cost: 143.08 sec
+[Epoch 235] training: err=0.5025	loss=0.9575
+[Epoch 235] validation: err=0.0651
+Epoch[236] Batch [399]	Speed: 348.41 samples/sec	err=0.4890	lr=0.11058
+[Epoch 236] speed: 349.00 samples/sec	time cost: 143.00 sec
+[Epoch 236] training: err=0.4855	loss=0.9298
+[Epoch 236] validation: err=0.0663
+Epoch[237] Batch [399]	Speed: 347.56 samples/sec	err=0.4748	lr=0.10995
+[Epoch 237] speed: 348.00 samples/sec	time cost: 143.38 sec
+[Epoch 237] training: err=0.4792	loss=0.9557
+[Epoch 237] validation: err=0.0750
+Epoch[238] Batch [399]	Speed: 348.86 samples/sec	err=0.4731	lr=0.10932
+[Epoch 238] speed: 349.00 samples/sec	time cost: 143.07 sec
+[Epoch 238] training: err=0.4739	loss=0.9561
+[Epoch 238] validation: err=0.0716
+Epoch[239] Batch [399]	Speed: 333.07 samples/sec	err=0.4919	lr=0.10869
+[Epoch 239] speed: 338.00 samples/sec	time cost: 147.77 sec
+[Epoch 239] training: err=0.4889	loss=0.9548
+[Epoch 239] validation: err=0.0630
+Epoch[240] Batch [399]	Speed: 353.82 samples/sec	err=0.4714	lr=0.10805
+[Epoch 240] speed: 352.00 samples/sec	time cost: 141.71 sec
+[Epoch 240] training: err=0.4822	loss=0.9202
+[Epoch 240] validation: err=0.0652
+Epoch[241] Batch [399]	Speed: 348.28 samples/sec	err=0.4690	lr=0.10742
+[Epoch 241] speed: 348.00 samples/sec	time cost: 143.60 sec
+[Epoch 241] training: err=0.4774	loss=0.9322
+[Epoch 241] validation: err=0.0718
+Epoch[242] Batch [399]	Speed: 349.76 samples/sec	err=0.5070	lr=0.10679
+[Epoch 242] speed: 349.00 samples/sec	time cost: 143.23 sec
+[Epoch 242] training: err=0.4916	loss=0.9475
+[Epoch 242] validation: err=0.0615
+Epoch[243] Batch [399]	Speed: 334.15 samples/sec	err=0.4805	lr=0.10615
+[Epoch 243] speed: 335.00 samples/sec	time cost: 149.14 sec
+[Epoch 243] training: err=0.4707	loss=0.9263
+[Epoch 243] validation: err=0.0686
+Epoch[244] Batch [399]	Speed: 334.77 samples/sec	err=0.4911	lr=0.10552
+[Epoch 244] speed: 334.00 samples/sec	time cost: 149.51 sec
+[Epoch 244] training: err=0.4906	loss=0.9496
+[Epoch 244] validation: err=0.0623
+Epoch[245] Batch [399]	Speed: 336.83 samples/sec	err=0.4995	lr=0.10489
+[Epoch 245] speed: 337.00 samples/sec	time cost: 148.34 sec
+[Epoch 245] training: err=0.4948	loss=0.9576
+[Epoch 245] validation: err=0.0769
+Epoch[246] Batch [399]	Speed: 336.56 samples/sec	err=0.5040	lr=0.10425
+[Epoch 246] speed: 337.00 samples/sec	time cost: 148.21 sec
+[Epoch 246] training: err=0.4934	loss=0.9379
+[Epoch 246] validation: err=0.0759
+Epoch[247] Batch [399]	Speed: 334.48 samples/sec	err=0.4653	lr=0.10362
+[Epoch 247] speed: 335.00 samples/sec	time cost: 149.15 sec
+[Epoch 247] training: err=0.4809	loss=0.9588
+[Epoch 247] validation: err=0.0867
+Epoch[248] Batch [399]	Speed: 335.25 samples/sec	err=0.4705	lr=0.10298
+[Epoch 248] speed: 335.00 samples/sec	time cost: 149.11 sec
+[Epoch 248] training: err=0.4748	loss=0.9425
+[Epoch 248] validation: err=0.0774
+Epoch[249] Batch [399]	Speed: 338.25 samples/sec	err=0.4944	lr=0.10235
+[Epoch 249] speed: 338.00 samples/sec	time cost: 147.72 sec
+[Epoch 249] training: err=0.5057	loss=0.9404
+[Epoch 249] validation: err=0.0649
+Epoch[250] Batch [399]	Speed: 335.73 samples/sec	err=0.4666	lr=0.10171
+[Epoch 250] speed: 335.00 samples/sec	time cost: 148.83 sec
+[Epoch 250] training: err=0.4787	loss=0.9487
+[Epoch 250] validation: err=0.0748
+Epoch[251] Batch [399]	Speed: 336.72 samples/sec	err=0.4795	lr=0.10108
+[Epoch 251] speed: 335.00 samples/sec	time cost: 148.85 sec
+[Epoch 251] training: err=0.4812	loss=0.9538
+[Epoch 251] validation: err=0.0866
+Epoch[252] Batch [399]	Speed: 339.78 samples/sec	err=0.4980	lr=0.10045
+[Epoch 252] speed: 339.00 samples/sec	time cost: 147.33 sec
+[Epoch 252] training: err=0.4907	loss=0.9448
+[Epoch 252] validation: err=0.0588
+Epoch[253] Batch [399]	Speed: 333.49 samples/sec	err=0.4577	lr=0.09981
+[Epoch 253] speed: 335.00 samples/sec	time cost: 148.83 sec
+[Epoch 253] training: err=0.4531	loss=0.9159
+[Epoch 253] validation: err=0.0622
+Epoch[254] Batch [399]	Speed: 335.38 samples/sec	err=0.4820	lr=0.09918
+[Epoch 254] speed: 336.00 samples/sec	time cost: 148.70 sec
+[Epoch 254] training: err=0.4773	loss=0.9447
+[Epoch 254] validation: err=0.0621
+Epoch[255] Batch [399]	Speed: 336.80 samples/sec	err=0.4447	lr=0.09854
+[Epoch 255] speed: 335.00 samples/sec	time cost: 149.24 sec
+[Epoch 255] training: err=0.4570	loss=0.9202
+[Epoch 255] validation: err=0.0734
+Epoch[256] Batch [399]	Speed: 341.21 samples/sec	err=0.4556	lr=0.09791
+[Epoch 256] speed: 341.00 samples/sec	time cost: 146.24 sec
+[Epoch 256] training: err=0.4609	loss=0.9362
+[Epoch 256] validation: err=0.0799
+Epoch[257] Batch [399]	Speed: 329.91 samples/sec	err=0.4896	lr=0.09727
+[Epoch 257] speed: 322.00 samples/sec	time cost: 155.27 sec
+[Epoch 257] training: err=0.4841	loss=0.9441
+[Epoch 257] validation: err=0.0595
+Epoch[258] Batch [399]	Speed: 337.34 samples/sec	err=0.4985	lr=0.09664
+[Epoch 258] speed: 337.00 samples/sec	time cost: 147.98 sec
+[Epoch 258] training: err=0.4911	loss=0.9308
+[Epoch 258] validation: err=0.0697
+Epoch[259] Batch [399]	Speed: 336.75 samples/sec	err=0.4544	lr=0.09600
+[Epoch 259] speed: 337.00 samples/sec	time cost: 148.28 sec
+[Epoch 259] training: err=0.4492	loss=0.9122
+[Epoch 259] validation: err=0.0674
+Epoch[260] Batch [399]	Speed: 330.03 samples/sec	err=0.4479	lr=0.09537
+[Epoch 260] speed: 332.00 samples/sec	time cost: 150.58 sec
+[Epoch 260] training: err=0.4435	loss=0.9269
+[Epoch 260] validation: err=0.0661
+Epoch[261] Batch [399]	Speed: 338.39 samples/sec	err=0.4952	lr=0.09474
+[Epoch 261] speed: 338.00 samples/sec	time cost: 147.69 sec
+[Epoch 261] training: err=0.4851	loss=0.9087
+[Epoch 261] validation: err=0.0748
+Epoch[262] Batch [399]	Speed: 334.77 samples/sec	err=0.4540	lr=0.09410
+[Epoch 262] speed: 336.00 samples/sec	time cost: 148.55 sec
+[Epoch 262] training: err=0.4557	loss=0.9457
+[Epoch 262] validation: err=0.0691
+Epoch[263] Batch [399]	Speed: 335.56 samples/sec	err=0.4913	lr=0.09347
+[Epoch 263] speed: 336.00 samples/sec	time cost: 148.59 sec
+[Epoch 263] training: err=0.5015	loss=0.9267
+[Epoch 263] validation: err=0.0579
+Epoch[264] Batch [399]	Speed: 338.20 samples/sec	err=0.4738	lr=0.09284
+[Epoch 264] speed: 338.00 samples/sec	time cost: 147.66 sec
+[Epoch 264] training: err=0.4724	loss=0.9020
+[Epoch 264] validation: err=0.0624
+Epoch[265] Batch [399]	Speed: 336.42 samples/sec	err=0.4796	lr=0.09220
+[Epoch 265] speed: 337.00 samples/sec	time cost: 148.02 sec
+[Epoch 265] training: err=0.4710	loss=0.9306
+[Epoch 265] validation: err=0.0728
+Epoch[266] Batch [399]	Speed: 334.62 samples/sec	err=0.4735	lr=0.09157
+[Epoch 266] speed: 333.00 samples/sec	time cost: 149.79 sec
+[Epoch 266] training: err=0.4734	loss=0.9340
+[Epoch 266] validation: err=0.0651
+Epoch[267] Batch [399]	Speed: 340.77 samples/sec	err=0.4612	lr=0.09094
+[Epoch 267] speed: 339.00 samples/sec	time cost: 147.13 sec
+[Epoch 267] training: err=0.4720	loss=0.9321
+[Epoch 267] validation: err=0.0607
+Epoch[268] Batch [399]	Speed: 333.48 samples/sec	err=0.4742	lr=0.09031
+[Epoch 268] speed: 333.00 samples/sec	time cost: 149.84 sec
+[Epoch 268] training: err=0.4789	loss=0.9366
+[Epoch 268] validation: err=0.0620
+Epoch[269] Batch [399]	Speed: 334.85 samples/sec	err=0.4457	lr=0.08967
+[Epoch 269] speed: 335.00 samples/sec	time cost: 148.97 sec
+[Epoch 269] training: err=0.4519	loss=0.9188
+[Epoch 269] validation: err=0.0626
+Epoch[270] Batch [399]	Speed: 340.89 samples/sec	err=0.5064	lr=0.08904
+[Epoch 270] speed: 341.00 samples/sec	time cost: 146.38 sec
+[Epoch 270] training: err=0.5038	loss=0.8949
+[Epoch 270] validation: err=0.0636
+Epoch[271] Batch [399]	Speed: 339.00 samples/sec	err=0.4606	lr=0.08841
+[Epoch 271] speed: 340.00 samples/sec	time cost: 146.94 sec
+[Epoch 271] training: err=0.4655	loss=0.9499
+[Epoch 271] validation: err=0.0715
+Epoch[272] Batch [399]	Speed: 336.02 samples/sec	err=0.4488	lr=0.08778
+[Epoch 272] speed: 336.00 samples/sec	time cost: 148.68 sec
+[Epoch 272] training: err=0.4551	loss=0.9126
+[Epoch 272] validation: err=0.0582
+Epoch[273] Batch [399]	Speed: 335.91 samples/sec	err=0.4655	lr=0.08715
+[Epoch 273] speed: 335.00 samples/sec	time cost: 148.87 sec
+[Epoch 273] training: err=0.4786	loss=0.9169
+[Epoch 273] validation: err=0.0614
+Epoch[274] Batch [399]	Speed: 335.31 samples/sec	err=0.5024	lr=0.08652
+[Epoch 274] speed: 337.00 samples/sec	time cost: 148.36 sec
+[Epoch 274] training: err=0.5043	loss=0.9333
+[Epoch 274] validation: err=0.0619
+Epoch[275] Batch [399]	Speed: 335.03 samples/sec	err=0.4926	lr=0.08590
+[Epoch 275] speed: 335.00 samples/sec	time cost: 149.24 sec
+[Epoch 275] training: err=0.4884	loss=0.8961
+[Epoch 275] validation: err=0.0640
+Epoch[276] Batch [399]	Speed: 329.02 samples/sec	err=0.4824	lr=0.08527
+[Epoch 276] speed: 332.00 samples/sec	time cost: 150.24 sec
+[Epoch 276] training: err=0.4708	loss=0.9125
+[Epoch 276] validation: err=0.0600
+Epoch[277] Batch [399]	Speed: 349.16 samples/sec	err=0.5048	lr=0.08464
+[Epoch 277] speed: 347.00 samples/sec	time cost: 143.78 sec
+[Epoch 277] training: err=0.5049	loss=0.9327
+[Epoch 277] validation: err=0.0612
+Epoch[278] Batch [399]	Speed: 350.20 samples/sec	err=0.4662	lr=0.08401
+[Epoch 278] speed: 350.00 samples/sec	time cost: 142.83 sec
+[Epoch 278] training: err=0.4731	loss=0.9033
+[Epoch 278] validation: err=0.0625
+Epoch[279] Batch [399]	Speed: 350.32 samples/sec	err=0.4762	lr=0.08339
+[Epoch 279] speed: 349.00 samples/sec	time cost: 142.90 sec
+[Epoch 279] training: err=0.4757	loss=0.8915
+[Epoch 279] validation: err=0.0634
+Epoch[280] Batch [399]	Speed: 345.86 samples/sec	err=0.4694	lr=0.08276
+[Epoch 280] speed: 346.00 samples/sec	time cost: 144.22 sec
+[Epoch 280] training: err=0.4602	loss=0.8851
+[Epoch 280] validation: err=0.0605
+Epoch[281] Batch [399]	Speed: 346.15 samples/sec	err=0.4754	lr=0.08214
+[Epoch 281] speed: 347.00 samples/sec	time cost: 144.05 sec
+[Epoch 281] training: err=0.4773	loss=0.9080
+[Epoch 281] validation: err=0.0614
+Epoch[282] Batch [399]	Speed: 346.82 samples/sec	err=0.4318	lr=0.08151
+[Epoch 282] speed: 346.00 samples/sec	time cost: 144.30 sec
+[Epoch 282] training: err=0.4402	loss=0.8918
+[Epoch 282] validation: err=0.0593
+Epoch[283] Batch [399]	Speed: 352.23 samples/sec	err=0.4857	lr=0.08089
+[Epoch 283] speed: 352.00 samples/sec	time cost: 141.80 sec
+[Epoch 283] training: err=0.4806	loss=0.8974
+[Epoch 283] validation: err=0.0699
+Epoch[284] Batch [399]	Speed: 345.30 samples/sec	err=0.4777	lr=0.08027
+[Epoch 284] speed: 346.00 samples/sec	time cost: 144.42 sec
+[Epoch 284] training: err=0.4782	loss=0.9030
+[Epoch 284] validation: err=0.0557
+Epoch[285] Batch [399]	Speed: 351.08 samples/sec	err=0.4792	lr=0.07964
+[Epoch 285] speed: 350.00 samples/sec	time cost: 142.71 sec
+[Epoch 285] training: err=0.4772	loss=0.9163
+[Epoch 285] validation: err=0.0593
+Epoch[286] Batch [399]	Speed: 345.98 samples/sec	err=0.4711	lr=0.07902
+[Epoch 286] speed: 345.00 samples/sec	time cost: 144.52 sec
+[Epoch 286] training: err=0.4643	loss=0.8931
+[Epoch 286] validation: err=0.0756
+Epoch[287] Batch [399]	Speed: 348.23 samples/sec	err=0.4837	lr=0.07840
+[Epoch 287] speed: 348.00 samples/sec	time cost: 143.58 sec
+[Epoch 287] training: err=0.4799	loss=0.9058
+[Epoch 287] validation: err=0.0587
+Epoch[288] Batch [399]	Speed: 351.05 samples/sec	err=0.4730	lr=0.07778
+[Epoch 288] speed: 350.00 samples/sec	time cost: 142.85 sec
+[Epoch 288] training: err=0.4847	loss=0.8861
+[Epoch 288] validation: err=0.0639
+Epoch[289] Batch [399]	Speed: 346.13 samples/sec	err=0.4706	lr=0.07717
+[Epoch 289] speed: 348.00 samples/sec	time cost: 143.63 sec
+[Epoch 289] training: err=0.4641	loss=0.8979
+[Epoch 289] validation: err=0.0528
+Epoch[290] Batch [399]	Speed: 346.33 samples/sec	err=0.4727	lr=0.07655
+[Epoch 290] speed: 345.00 samples/sec	time cost: 144.84 sec
+[Epoch 290] training: err=0.4644	loss=0.9005
+[Epoch 290] validation: err=0.0630
+Epoch[291] Batch [399]	Speed: 349.64 samples/sec	err=0.4767	lr=0.07593
+[Epoch 291] speed: 350.00 samples/sec	time cost: 142.84 sec
+[Epoch 291] training: err=0.4736	loss=0.8844
+[Epoch 291] validation: err=0.0627
+Epoch[292] Batch [399]	Speed: 346.70 samples/sec	err=0.4676	lr=0.07532
+[Epoch 292] speed: 347.00 samples/sec	time cost: 144.00 sec
+[Epoch 292] training: err=0.4700	loss=0.8826
+[Epoch 292] validation: err=0.0542
+Epoch[293] Batch [399]	Speed: 348.18 samples/sec	err=0.5034	lr=0.07470
+[Epoch 293] speed: 348.00 samples/sec	time cost: 143.39 sec
+[Epoch 293] training: err=0.4963	loss=0.8860
+[Epoch 293] validation: err=0.0700
+Epoch[294] Batch [399]	Speed: 345.09 samples/sec	err=0.4949	lr=0.07409
+[Epoch 294] speed: 339.00 samples/sec	time cost: 147.07 sec
+[Epoch 294] training: err=0.4818	loss=0.8896
+[Epoch 294] validation: err=0.0638
+Epoch[295] Batch [399]	Speed: 345.46 samples/sec	err=0.4579	lr=0.07348
+[Epoch 295] speed: 347.00 samples/sec	time cost: 143.88 sec
+[Epoch 295] training: err=0.4742	loss=0.8932
+[Epoch 295] validation: err=0.0498
+Epoch[296] Batch [399]	Speed: 346.91 samples/sec	err=0.4758	lr=0.07286
+[Epoch 296] speed: 347.00 samples/sec	time cost: 143.76 sec
+[Epoch 296] training: err=0.4784	loss=0.9144
+[Epoch 296] validation: err=0.0653
+Epoch[297] Batch [399]	Speed: 350.37 samples/sec	err=0.4619	lr=0.07225
+[Epoch 297] speed: 349.00 samples/sec	time cost: 142.88 sec
+[Epoch 297] training: err=0.4668	loss=0.8586
+[Epoch 297] validation: err=0.0658
+Epoch[298] Batch [399]	Speed: 347.47 samples/sec	err=0.5126	lr=0.07165
+[Epoch 298] speed: 348.00 samples/sec	time cost: 143.48 sec
+[Epoch 298] training: err=0.5157	loss=0.8437
+[Epoch 298] validation: err=0.0553
+Epoch[299] Batch [399]	Speed: 348.55 samples/sec	err=0.5172	lr=0.07104
+[Epoch 299] speed: 347.00 samples/sec	time cost: 143.69 sec
+[Epoch 299] training: err=0.5033	loss=0.8836
+[Epoch 299] validation: err=0.0629
+Epoch[300] Batch [399]	Speed: 349.81 samples/sec	err=0.4712	lr=0.07043
+[Epoch 300] speed: 349.00 samples/sec	time cost: 143.05 sec
+[Epoch 300] training: err=0.4743	loss=0.8756
+[Epoch 300] validation: err=0.0573
+Epoch[301] Batch [399]	Speed: 345.38 samples/sec	err=0.4708	lr=0.06982
+[Epoch 301] speed: 346.00 samples/sec	time cost: 144.18 sec
+[Epoch 301] training: err=0.4678	loss=0.8863
+[Epoch 301] validation: err=0.0563
+Epoch[302] Batch [399]	Speed: 347.18 samples/sec	err=0.4624	lr=0.06922
+[Epoch 302] speed: 348.00 samples/sec	time cost: 143.50 sec
+[Epoch 302] training: err=0.4632	loss=0.8570
+[Epoch 302] validation: err=0.0530
+Epoch[303] Batch [399]	Speed: 346.19 samples/sec	err=0.4683	lr=0.06862
+[Epoch 303] speed: 346.00 samples/sec	time cost: 144.25 sec
+[Epoch 303] training: err=0.4689	loss=0.8951
+[Epoch 303] validation: err=0.0537
+Epoch[304] Batch [399]	Speed: 343.10 samples/sec	err=0.4638	lr=0.06802
+[Epoch 304] speed: 343.00 samples/sec	time cost: 145.66 sec
+[Epoch 304] training: err=0.4790	loss=0.8576
+[Epoch 304] validation: err=0.0545
+Epoch[305] Batch [399]	Speed: 349.26 samples/sec	err=0.4905	lr=0.06741
+[Epoch 305] speed: 348.00 samples/sec	time cost: 143.30 sec
+[Epoch 305] training: err=0.4927	loss=0.8760
+[Epoch 305] validation: err=0.0584
+Epoch[306] Batch [399]	Speed: 347.11 samples/sec	err=0.4693	lr=0.06682
+[Epoch 306] speed: 347.00 samples/sec	time cost: 143.77 sec
+[Epoch 306] training: err=0.4754	loss=0.8767
+[Epoch 306] validation: err=0.0643
+Epoch[307] Batch [399]	Speed: 346.33 samples/sec	err=0.5008	lr=0.06622
+[Epoch 307] speed: 347.00 samples/sec	time cost: 144.05 sec
+[Epoch 307] training: err=0.5050	loss=0.8935
+[Epoch 307] validation: err=0.0605
+Epoch[308] Batch [399]	Speed: 347.06 samples/sec	err=0.4686	lr=0.06562
+[Epoch 308] speed: 347.00 samples/sec	time cost: 143.82 sec
+[Epoch 308] training: err=0.4545	loss=0.8716
+[Epoch 308] validation: err=0.0693
+Epoch[309] Batch [399]	Speed: 348.84 samples/sec	err=0.4907	lr=0.06503
+[Epoch 309] speed: 350.00 samples/sec	time cost: 142.75 sec
+[Epoch 309] training: err=0.4895	loss=0.8800
+[Epoch 309] validation: err=0.0600
+Epoch[310] Batch [399]	Speed: 349.30 samples/sec	err=0.4680	lr=0.06443
+[Epoch 310] speed: 349.00 samples/sec	time cost: 143.05 sec
+[Epoch 310] training: err=0.4670	loss=0.8702
+[Epoch 310] validation: err=0.0588
+Epoch[311] Batch [399]	Speed: 346.66 samples/sec	err=0.4642	lr=0.06384
+[Epoch 311] speed: 346.00 samples/sec	time cost: 144.22 sec
+[Epoch 311] training: err=0.4590	loss=0.8871
+[Epoch 311] validation: err=0.0682
+Epoch[312] Batch [399]	Speed: 348.56 samples/sec	err=0.4836	lr=0.06325
+[Epoch 312] speed: 347.00 samples/sec	time cost: 143.70 sec
+[Epoch 312] training: err=0.4922	loss=0.8838
+[Epoch 312] validation: err=0.0611
+Epoch[313] Batch [399]	Speed: 335.21 samples/sec	err=0.4456	lr=0.06266
+[Epoch 313] speed: 338.00 samples/sec	time cost: 147.84 sec
+[Epoch 313] training: err=0.4485	loss=0.8984
+[Epoch 313] validation: err=0.0545
+Epoch[314] Batch [399]	Speed: 348.45 samples/sec	err=0.5192	lr=0.06207
+[Epoch 314] speed: 347.00 samples/sec	time cost: 143.86 sec
+[Epoch 314] training: err=0.5086	loss=0.8687
+[Epoch 314] validation: err=0.0536
+Epoch[315] Batch [399]	Speed: 348.79 samples/sec	err=0.4846	lr=0.06148
+[Epoch 315] speed: 347.00 samples/sec	time cost: 143.76 sec
+[Epoch 315] training: err=0.4944	loss=0.8813
+[Epoch 315] validation: err=0.0569
+Epoch[316] Batch [399]	Speed: 349.34 samples/sec	err=0.4952	lr=0.06090
+[Epoch 316] speed: 350.00 samples/sec	time cost: 142.81 sec
+[Epoch 316] training: err=0.4987	loss=0.8817
+[Epoch 316] validation: err=0.0563
+Epoch[317] Batch [399]	Speed: 348.28 samples/sec	err=0.4569	lr=0.06032
+[Epoch 317] speed: 347.00 samples/sec	time cost: 143.97 sec
+[Epoch 317] training: err=0.4718	loss=0.8782
+[Epoch 317] validation: err=0.0553
+Epoch[318] Batch [399]	Speed: 346.06 samples/sec	err=0.4665	lr=0.05973
+[Epoch 318] speed: 346.00 samples/sec	time cost: 144.25 sec
+[Epoch 318] training: err=0.4737	loss=0.8521
+[Epoch 318] validation: err=0.0638
+Epoch[319] Batch [399]	Speed: 346.46 samples/sec	err=0.4588	lr=0.05915
+[Epoch 319] speed: 347.00 samples/sec	time cost: 143.84 sec
+[Epoch 319] training: err=0.4705	loss=0.8753
+[Epoch 319] validation: err=0.0544
+Epoch[320] Batch [399]	Speed: 345.62 samples/sec	err=0.4805	lr=0.05858
+[Epoch 320] speed: 345.00 samples/sec	time cost: 144.75 sec
+[Epoch 320] training: err=0.4851	loss=0.8644
+[Epoch 320] validation: err=0.0495
+Epoch[321] Batch [399]	Speed: 345.73 samples/sec	err=0.4732	lr=0.05800
+[Epoch 321] speed: 345.00 samples/sec	time cost: 144.61 sec
+[Epoch 321] training: err=0.4727	loss=0.8591
+[Epoch 321] validation: err=0.0543
+Epoch[322] Batch [399]	Speed: 348.68 samples/sec	err=0.4616	lr=0.05742
+[Epoch 322] speed: 347.00 samples/sec	time cost: 143.76 sec
+[Epoch 322] training: err=0.4637	loss=0.8331
+[Epoch 322] validation: err=0.0550
+Epoch[323] Batch [399]	Speed: 347.69 samples/sec	err=0.4863	lr=0.05685
+[Epoch 323] speed: 347.00 samples/sec	time cost: 143.96 sec
+[Epoch 323] training: err=0.4838	loss=0.8666
+[Epoch 323] validation: err=0.0594
+Epoch[324] Batch [399]	Speed: 346.20 samples/sec	err=0.4823	lr=0.05628
+[Epoch 324] speed: 347.00 samples/sec	time cost: 143.92 sec
+[Epoch 324] training: err=0.4787	loss=0.8818
+[Epoch 324] validation: err=0.0531
+Epoch[325] Batch [399]	Speed: 344.19 samples/sec	err=0.4791	lr=0.05571
+[Epoch 325] speed: 346.00 samples/sec	time cost: 144.30 sec
+[Epoch 325] training: err=0.4853	loss=0.8624
+[Epoch 325] validation: err=0.0529
+Epoch[326] Batch [399]	Speed: 345.25 samples/sec	err=0.4553	lr=0.05514
+[Epoch 326] speed: 346.00 samples/sec	time cost: 144.31 sec
+[Epoch 326] training: err=0.4577	loss=0.8841
+[Epoch 326] validation: err=0.0546
+Epoch[327] Batch [399]	Speed: 347.33 samples/sec	err=0.4946	lr=0.05457
+[Epoch 327] speed: 347.00 samples/sec	time cost: 143.74 sec
+[Epoch 327] training: err=0.4890	loss=0.8704
+[Epoch 327] validation: err=0.0532
+Epoch[328] Batch [399]	Speed: 346.92 samples/sec	err=0.4413	lr=0.05401
+[Epoch 328] speed: 346.00 samples/sec	time cost: 144.49 sec
+[Epoch 328] training: err=0.4384	loss=0.8651
+[Epoch 328] validation: err=0.0631
+Epoch[329] Batch [399]	Speed: 348.99 samples/sec	err=0.4824	lr=0.05345
+[Epoch 329] speed: 348.00 samples/sec	time cost: 143.43 sec
+[Epoch 329] training: err=0.4804	loss=0.8579
+[Epoch 329] validation: err=0.0571
+Epoch[330] Batch [399]	Speed: 345.41 samples/sec	err=0.4675	lr=0.05289
+[Epoch 330] speed: 347.00 samples/sec	time cost: 143.85 sec
+[Epoch 330] training: err=0.4787	loss=0.8575
+[Epoch 330] validation: err=0.0501
+Epoch[331] Batch [399]	Speed: 342.26 samples/sec	err=0.4891	lr=0.05233
+[Epoch 331] speed: 337.00 samples/sec	time cost: 148.20 sec
+[Epoch 331] training: err=0.4692	loss=0.8742
+[Epoch 331] validation: err=0.0531
+Epoch[332] Batch [399]	Speed: 349.98 samples/sec	err=0.4527	lr=0.05177
+[Epoch 332] speed: 349.00 samples/sec	time cost: 143.05 sec
+[Epoch 332] training: err=0.4544	loss=0.8461
+[Epoch 332] validation: err=0.0589
+Epoch[333] Batch [399]	Speed: 345.67 samples/sec	err=0.4512	lr=0.05122
+[Epoch 333] speed: 346.00 samples/sec	time cost: 144.30 sec
+[Epoch 333] training: err=0.4455	loss=0.8451
+[Epoch 333] validation: err=0.0520
+Epoch[334] Batch [399]	Speed: 349.16 samples/sec	err=0.4527	lr=0.05066
+[Epoch 334] speed: 348.00 samples/sec	time cost: 143.51 sec
+[Epoch 334] training: err=0.4486	loss=0.8175
+[Epoch 334] validation: err=0.0509
+Epoch[335] Batch [399]	Speed: 346.87 samples/sec	err=0.4686	lr=0.05011
+[Epoch 335] speed: 347.00 samples/sec	time cost: 143.75 sec
+[Epoch 335] training: err=0.4724	loss=0.8386
+[Epoch 335] validation: err=0.0498
+Epoch[336] Batch [399]	Speed: 345.01 samples/sec	err=0.4567	lr=0.04956
+[Epoch 336] speed: 346.00 samples/sec	time cost: 144.11 sec
+[Epoch 336] training: err=0.4700	loss=0.8333
+[Epoch 336] validation: err=0.0566
+Epoch[337] Batch [399]	Speed: 348.41 samples/sec	err=0.4671	lr=0.04902
+[Epoch 337] speed: 348.00 samples/sec	time cost: 143.39 sec
+[Epoch 337] training: err=0.4644	loss=0.8447
+[Epoch 337] validation: err=0.0539
+Epoch[338] Batch [399]	Speed: 345.45 samples/sec	err=0.4660	lr=0.04847
+[Epoch 338] speed: 345.00 samples/sec	time cost: 144.58 sec
+[Epoch 338] training: err=0.4642	loss=0.8518
+[Epoch 338] validation: err=0.0607
+Epoch[339] Batch [399]	Speed: 347.47 samples/sec	err=0.4477	lr=0.04793
+[Epoch 339] speed: 347.00 samples/sec	time cost: 143.96 sec
+[Epoch 339] training: err=0.4453	loss=0.8342
+[Epoch 339] validation: err=0.0505
+Epoch[340] Batch [399]	Speed: 347.33 samples/sec	err=0.4581	lr=0.04739
+[Epoch 340] speed: 346.00 samples/sec	time cost: 144.30 sec
+[Epoch 340] training: err=0.4556	loss=0.8422
+[Epoch 340] validation: err=0.0538
+Epoch[341] Batch [399]	Speed: 345.78 samples/sec	err=0.4721	lr=0.04685
+[Epoch 341] speed: 346.00 samples/sec	time cost: 144.12 sec
+[Epoch 341] training: err=0.4746	loss=0.8614
+[Epoch 341] validation: err=0.0569
+Epoch[342] Batch [399]	Speed: 344.60 samples/sec	err=0.4835	lr=0.04631
+[Epoch 342] speed: 346.00 samples/sec	time cost: 144.24 sec
+[Epoch 342] training: err=0.4736	loss=0.8565
+[Epoch 342] validation: err=0.0554
+Epoch[343] Batch [399]	Speed: 348.46 samples/sec	err=0.4957	lr=0.04578
+[Epoch 343] speed: 349.00 samples/sec	time cost: 143.20 sec
+[Epoch 343] training: err=0.4943	loss=0.8144
+[Epoch 343] validation: err=0.0549
+Epoch[344] Batch [399]	Speed: 351.04 samples/sec	err=0.4306	lr=0.04524
+[Epoch 344] speed: 350.00 samples/sec	time cost: 142.74 sec
+[Epoch 344] training: err=0.4400	loss=0.8402
+[Epoch 344] validation: err=0.0509
+Epoch[345] Batch [399]	Speed: 347.24 samples/sec	err=0.4860	lr=0.04471
+[Epoch 345] speed: 346.00 samples/sec	time cost: 144.35 sec
+[Epoch 345] training: err=0.4840	loss=0.8291
+[Epoch 345] validation: err=0.0535
+Epoch[346] Batch [399]	Speed: 349.15 samples/sec	err=0.4632	lr=0.04419
+[Epoch 346] speed: 347.00 samples/sec	time cost: 143.72 sec
+[Epoch 346] training: err=0.4737	loss=0.8240
+[Epoch 346] validation: err=0.0438
+Epoch[347] Batch [399]	Speed: 347.02 samples/sec	err=0.4649	lr=0.04366
+[Epoch 347] speed: 347.00 samples/sec	time cost: 143.87 sec
+[Epoch 347] training: err=0.4784	loss=0.8363
+[Epoch 347] validation: err=0.0561
+Epoch[348] Batch [399]	Speed: 345.68 samples/sec	err=0.4716	lr=0.04314
+[Epoch 348] speed: 345.00 samples/sec	time cost: 144.52 sec
+[Epoch 348] training: err=0.4728	loss=0.8616
+[Epoch 348] validation: err=0.0593
+Epoch[349] Batch [399]	Speed: 350.83 samples/sec	err=0.4413	lr=0.04262
+[Epoch 349] speed: 347.00 samples/sec	time cost: 143.71 sec
+[Epoch 349] training: err=0.4416	loss=0.8480
+[Epoch 349] validation: err=0.0535
+Epoch[350] Batch [399]	Speed: 334.03 samples/sec	err=0.4540	lr=0.04210
+[Epoch 350] speed: 338.00 samples/sec	time cost: 147.55 sec
+[Epoch 350] training: err=0.4593	loss=0.8120
+[Epoch 350] validation: err=0.0462
+Epoch[351] Batch [399]	Speed: 342.29 samples/sec	err=0.4399	lr=0.04158
+[Epoch 351] speed: 342.00 samples/sec	time cost: 146.20 sec
+[Epoch 351] training: err=0.4549	loss=0.8251
+[Epoch 351] validation: err=0.0415
+Epoch[352] Batch [399]	Speed: 352.80 samples/sec	err=0.4392	lr=0.04107
+[Epoch 352] speed: 350.00 samples/sec	time cost: 142.82 sec
+[Epoch 352] training: err=0.4339	loss=0.8250
+[Epoch 352] validation: err=0.0472
+Epoch[353] Batch [399]	Speed: 345.07 samples/sec	err=0.4617	lr=0.04056
+[Epoch 353] speed: 346.00 samples/sec	time cost: 144.35 sec
+[Epoch 353] training: err=0.4609	loss=0.8267
+[Epoch 353] validation: err=0.0487
+Epoch[354] Batch [399]	Speed: 342.20 samples/sec	err=0.4639	lr=0.04005
+[Epoch 354] speed: 345.00 samples/sec	time cost: 144.88 sec
+[Epoch 354] training: err=0.4757	loss=0.8207
+[Epoch 354] validation: err=0.0458
+Epoch[355] Batch [399]	Speed: 348.81 samples/sec	err=0.4768	lr=0.03954
+[Epoch 355] speed: 348.00 samples/sec	time cost: 143.37 sec
+[Epoch 355] training: err=0.4639	loss=0.8248
+[Epoch 355] validation: err=0.0468
+Epoch[356] Batch [399]	Speed: 345.99 samples/sec	err=0.4669	lr=0.03904
+[Epoch 356] speed: 346.00 samples/sec	time cost: 144.17 sec
+[Epoch 356] training: err=0.4583	loss=0.8134
+[Epoch 356] validation: err=0.0503
+Epoch[357] Batch [399]	Speed: 348.77 samples/sec	err=0.4790	lr=0.03853
+[Epoch 357] speed: 347.00 samples/sec	time cost: 143.81 sec
+[Epoch 357] training: err=0.4717	loss=0.8166
+[Epoch 357] validation: err=0.0447
+Epoch[358] Batch [399]	Speed: 345.70 samples/sec	err=0.4388	lr=0.03804
+[Epoch 358] speed: 346.00 samples/sec	time cost: 144.44 sec
+[Epoch 358] training: err=0.4425	loss=0.8137
+[Epoch 358] validation: err=0.0534
+Epoch[359] Batch [399]	Speed: 346.28 samples/sec	err=0.4382	lr=0.03754
+[Epoch 359] speed: 346.00 samples/sec	time cost: 144.11 sec
+[Epoch 359] training: err=0.4548	loss=0.8052
+[Epoch 359] validation: err=0.0485
+Epoch[360] Batch [399]	Speed: 347.99 samples/sec	err=0.4528	lr=0.03704
+[Epoch 360] speed: 348.00 samples/sec	time cost: 143.54 sec
+[Epoch 360] training: err=0.4551	loss=0.8241
+[Epoch 360] validation: err=0.0475
+Epoch[361] Batch [399]	Speed: 345.17 samples/sec	err=0.4782	lr=0.03655
+[Epoch 361] speed: 345.00 samples/sec	time cost: 144.61 sec
+[Epoch 361] training: err=0.4778	loss=0.7930
+[Epoch 361] validation: err=0.0518
+Epoch[362] Batch [399]	Speed: 348.71 samples/sec	err=0.4900	lr=0.03606
+[Epoch 362] speed: 348.00 samples/sec	time cost: 143.51 sec
+[Epoch 362] training: err=0.4866	loss=0.7963
+[Epoch 362] validation: err=0.0427
+Epoch[363] Batch [399]	Speed: 349.51 samples/sec	err=0.4929	lr=0.03558
+[Epoch 363] speed: 348.00 samples/sec	time cost: 143.64 sec
+[Epoch 363] training: err=0.5028	loss=0.8165
+[Epoch 363] validation: err=0.0447
+Epoch[364] Batch [399]	Speed: 346.19 samples/sec	err=0.4789	lr=0.03509
+[Epoch 364] speed: 346.00 samples/sec	time cost: 144.32 sec
+[Epoch 364] training: err=0.4800	loss=0.8258
+[Epoch 364] validation: err=0.0463
+Epoch[365] Batch [399]	Speed: 349.50 samples/sec	err=0.4515	lr=0.03461
+[Epoch 365] speed: 350.00 samples/sec	time cost: 142.84 sec
+[Epoch 365] training: err=0.4557	loss=0.7828
+[Epoch 365] validation: err=0.0466
+Epoch[366] Batch [399]	Speed: 347.07 samples/sec	err=0.4577	lr=0.03413
+[Epoch 366] speed: 347.00 samples/sec	time cost: 143.93 sec
+[Epoch 366] training: err=0.4588	loss=0.8105
+[Epoch 366] validation: err=0.0453
+Epoch[367] Batch [399]	Speed: 347.31 samples/sec	err=0.4522	lr=0.03366
+[Epoch 367] speed: 347.00 samples/sec	time cost: 143.96 sec
+[Epoch 367] training: err=0.4590	loss=0.8169
+[Epoch 367] validation: err=0.0443
+Epoch[368] Batch [399]	Speed: 335.47 samples/sec	err=0.4685	lr=0.03318
+[Epoch 368] speed: 338.00 samples/sec	time cost: 147.72 sec
+[Epoch 368] training: err=0.4760	loss=0.7912
+[Epoch 368] validation: err=0.0437
+Epoch[369] Batch [399]	Speed: 347.37 samples/sec	err=0.4500	lr=0.03271
+[Epoch 369] speed: 347.00 samples/sec	time cost: 143.87 sec
+[Epoch 369] training: err=0.4512	loss=0.8118
+[Epoch 369] validation: err=0.0432
+Epoch[370] Batch [399]	Speed: 346.38 samples/sec	err=0.4614	lr=0.03224
+[Epoch 370] speed: 345.00 samples/sec	time cost: 144.65 sec
+[Epoch 370] training: err=0.4593	loss=0.7739
+[Epoch 370] validation: err=0.0454
+Epoch[371] Batch [399]	Speed: 346.32 samples/sec	err=0.4525	lr=0.03178
+[Epoch 371] speed: 348.00 samples/sec	time cost: 143.52 sec
+[Epoch 371] training: err=0.4523	loss=0.8095
+[Epoch 371] validation: err=0.0466
+Epoch[372] Batch [399]	Speed: 350.26 samples/sec	err=0.4569	lr=0.03132
+[Epoch 372] speed: 351.00 samples/sec	time cost: 142.37 sec
+[Epoch 372] training: err=0.4700	loss=0.8023
+[Epoch 372] validation: err=0.0471
+Epoch[373] Batch [399]	Speed: 348.08 samples/sec	err=0.4340	lr=0.03086
+[Epoch 373] speed: 348.00 samples/sec	time cost: 143.43 sec
+[Epoch 373] training: err=0.4420	loss=0.8078
+[Epoch 373] validation: err=0.0403
+Epoch[374] Batch [399]	Speed: 349.91 samples/sec	err=0.4559	lr=0.03040
+[Epoch 374] speed: 349.00 samples/sec	time cost: 142.97 sec
+[Epoch 374] training: err=0.4672	loss=0.8010
+[Epoch 374] validation: err=0.0416
+Epoch[375] Batch [399]	Speed: 349.95 samples/sec	err=0.4887	lr=0.02994
+[Epoch 375] speed: 349.00 samples/sec	time cost: 143.12 sec
+[Epoch 375] training: err=0.4957	loss=0.8228
+[Epoch 375] validation: err=0.0577
+Epoch[376] Batch [399]	Speed: 349.42 samples/sec	err=0.4528	lr=0.02949
+[Epoch 376] speed: 348.00 samples/sec	time cost: 143.46 sec
+[Epoch 376] training: err=0.4585	loss=0.7882
+[Epoch 376] validation: err=0.0394
+Epoch[377] Batch [399]	Speed: 350.41 samples/sec	err=0.4633	lr=0.02904
+[Epoch 377] speed: 349.00 samples/sec	time cost: 142.93 sec
+[Epoch 377] training: err=0.4566	loss=0.8350
+[Epoch 377] validation: err=0.0419
+Epoch[378] Batch [399]	Speed: 346.91 samples/sec	err=0.4719	lr=0.02860
+[Epoch 378] speed: 348.00 samples/sec	time cost: 143.31 sec
+[Epoch 378] training: err=0.4734	loss=0.7784
+[Epoch 378] validation: err=0.0397
+Epoch[379] Batch [399]	Speed: 346.87 samples/sec	err=0.4653	lr=0.02816
+[Epoch 379] speed: 347.00 samples/sec	time cost: 143.74 sec
+[Epoch 379] training: err=0.4553	loss=0.7860
+[Epoch 379] validation: err=0.0468
+Epoch[380] Batch [399]	Speed: 348.27 samples/sec	err=0.4544	lr=0.02772
+[Epoch 380] speed: 349.00 samples/sec	time cost: 143.12 sec
+[Epoch 380] training: err=0.4525	loss=0.8040
+[Epoch 380] validation: err=0.0444
+Epoch[381] Batch [399]	Speed: 350.42 samples/sec	err=0.4553	lr=0.02728
+[Epoch 381] speed: 350.00 samples/sec	time cost: 142.82 sec
+[Epoch 381] training: err=0.4579	loss=0.7576
+[Epoch 381] validation: err=0.0432
+Epoch[382] Batch [399]	Speed: 351.86 samples/sec	err=0.4510	lr=0.02684
+[Epoch 382] speed: 351.00 samples/sec	time cost: 142.44 sec
+[Epoch 382] training: err=0.4571	loss=0.7876
+[Epoch 382] validation: err=0.0421
+Epoch[383] Batch [399]	Speed: 349.09 samples/sec	err=0.4530	lr=0.02641
+[Epoch 383] speed: 350.00 samples/sec	time cost: 142.74 sec
+[Epoch 383] training: err=0.4581	loss=0.8106
+[Epoch 383] validation: err=0.0387
+Epoch[384] Batch [399]	Speed: 351.52 samples/sec	err=0.4732	lr=0.02598
+[Epoch 384] speed: 350.00 samples/sec	time cost: 142.56 sec
+[Epoch 384] training: err=0.4760	loss=0.7726
+[Epoch 384] validation: err=0.0480
+Epoch[385] Batch [399]	Speed: 349.39 samples/sec	err=0.4735	lr=0.02556
+[Epoch 385] speed: 348.00 samples/sec	time cost: 143.38 sec
+[Epoch 385] training: err=0.4711	loss=0.7611
+[Epoch 385] validation: err=0.0421
+Epoch[386] Batch [399]	Speed: 349.43 samples/sec	err=0.4931	lr=0.02514
+[Epoch 386] speed: 349.00 samples/sec	time cost: 143.21 sec
+[Epoch 386] training: err=0.4867	loss=0.7753
+[Epoch 386] validation: err=0.0413
+Epoch[387] Batch [399]	Speed: 337.55 samples/sec	err=0.4819	lr=0.02472
+[Epoch 387] speed: 340.00 samples/sec	time cost: 146.90 sec
+[Epoch 387] training: err=0.4880	loss=0.7376
+[Epoch 387] validation: err=0.0410
+Epoch[388] Batch [399]	Speed: 349.72 samples/sec	err=0.4837	lr=0.02430
+[Epoch 388] speed: 349.00 samples/sec	time cost: 142.91 sec
+[Epoch 388] training: err=0.4745	loss=0.7543
+[Epoch 388] validation: err=0.0419
+Epoch[389] Batch [399]	Speed: 349.42 samples/sec	err=0.4751	lr=0.02389
+[Epoch 389] speed: 350.00 samples/sec	time cost: 142.63 sec
+[Epoch 389] training: err=0.4781	loss=0.7503
+[Epoch 389] validation: err=0.0381
+Epoch[390] Batch [399]	Speed: 345.96 samples/sec	err=0.4737	lr=0.02348
+[Epoch 390] speed: 346.00 samples/sec	time cost: 144.40 sec
+[Epoch 390] training: err=0.4722	loss=0.7689
+[Epoch 390] validation: err=0.0417
+Epoch[391] Batch [399]	Speed: 349.29 samples/sec	err=0.4671	lr=0.02307
+[Epoch 391] speed: 349.00 samples/sec	time cost: 143.09 sec
+[Epoch 391] training: err=0.4692	loss=0.7621
+[Epoch 391] validation: err=0.0388
+Epoch[392] Batch [399]	Speed: 349.56 samples/sec	err=0.4646	lr=0.02267
+[Epoch 392] speed: 348.00 samples/sec	time cost: 143.32 sec
+[Epoch 392] training: err=0.4630	loss=0.7845
+[Epoch 392] validation: err=0.0430
+Epoch[393] Batch [399]	Speed: 349.14 samples/sec	err=0.4737	lr=0.02227
+[Epoch 393] speed: 349.00 samples/sec	time cost: 143.03 sec
+[Epoch 393] training: err=0.4780	loss=0.7577
+[Epoch 393] validation: err=0.0407
+Epoch[394] Batch [399]	Speed: 346.92 samples/sec	err=0.4709	lr=0.02187
+[Epoch 394] speed: 348.00 samples/sec	time cost: 143.36 sec
+[Epoch 394] training: err=0.4765	loss=0.7356
+[Epoch 394] validation: err=0.0397
+Epoch[395] Batch [399]	Speed: 348.42 samples/sec	err=0.4625	lr=0.02147
+[Epoch 395] speed: 349.00 samples/sec	time cost: 142.88 sec
+[Epoch 395] training: err=0.4687	loss=0.7546
+[Epoch 395] validation: err=0.0418
+Epoch[396] Batch [399]	Speed: 349.55 samples/sec	err=0.4189	lr=0.02108
+[Epoch 396] speed: 350.00 samples/sec	time cost: 142.66 sec
+[Epoch 396] training: err=0.4160	loss=0.7564
+[Epoch 396] validation: err=0.0390
+Epoch[397] Batch [399]	Speed: 348.99 samples/sec	err=0.4627	lr=0.02069
+[Epoch 397] speed: 350.00 samples/sec	time cost: 142.84 sec
+[Epoch 397] training: err=0.4524	loss=0.7701
+[Epoch 397] validation: err=0.0397
+Epoch[398] Batch [399]	Speed: 350.65 samples/sec	err=0.4418	lr=0.02031
+[Epoch 398] speed: 350.00 samples/sec	time cost: 142.55 sec
+[Epoch 398] training: err=0.4513	loss=0.7747
+[Epoch 398] validation: err=0.0444
+Epoch[399] Batch [399]	Speed: 346.99 samples/sec	err=0.4470	lr=0.01993
+[Epoch 399] speed: 347.00 samples/sec	time cost: 144.00 sec
+[Epoch 399] training: err=0.4565	loss=0.7599
+[Epoch 399] validation: err=0.0394
+Epoch[400] Batch [399]	Speed: 352.00 samples/sec	err=0.4880	lr=0.01955
+[Epoch 400] speed: 351.00 samples/sec	time cost: 142.20 sec
+[Epoch 400] training: err=0.4976	loss=0.7574
+[Epoch 400] validation: err=0.0355
+Epoch[401] Batch [399]	Speed: 351.44 samples/sec	err=0.4670	lr=0.01917
+[Epoch 401] speed: 351.00 samples/sec	time cost: 142.24 sec
+[Epoch 401] training: err=0.4736	loss=0.7799
+[Epoch 401] validation: err=0.0383
+Epoch[402] Batch [399]	Speed: 348.98 samples/sec	err=0.4692	lr=0.01880
+[Epoch 402] speed: 348.00 samples/sec	time cost: 143.32 sec
+[Epoch 402] training: err=0.4547	loss=0.7318
+[Epoch 402] validation: err=0.0393
+Epoch[403] Batch [399]	Speed: 351.27 samples/sec	err=0.4406	lr=0.01843
+[Epoch 403] speed: 350.00 samples/sec	time cost: 142.73 sec
+[Epoch 403] training: err=0.4465	loss=0.7497
+[Epoch 403] validation: err=0.0377
+Epoch[404] Batch [399]	Speed: 344.24 samples/sec	err=0.4854	lr=0.01807
+[Epoch 404] speed: 345.00 samples/sec	time cost: 144.76 sec
+[Epoch 404] training: err=0.4688	loss=0.7307
+[Epoch 404] validation: err=0.0362
+Epoch[405] Batch [399]	Speed: 347.84 samples/sec	err=0.4527	lr=0.01771
+[Epoch 405] speed: 349.00 samples/sec	time cost: 143.01 sec
+[Epoch 405] training: err=0.4638	loss=0.7551
+[Epoch 405] validation: err=0.0349
+Epoch[406] Batch [399]	Speed: 336.71 samples/sec	err=0.4203	lr=0.01735
+[Epoch 406] speed: 339.00 samples/sec	time cost: 147.12 sec
+[Epoch 406] training: err=0.4317	loss=0.7610
+[Epoch 406] validation: err=0.0366
+Epoch[407] Batch [399]	Speed: 347.61 samples/sec	err=0.4580	lr=0.01699
+[Epoch 407] speed: 348.00 samples/sec	time cost: 143.44 sec
+[Epoch 407] training: err=0.4691	loss=0.7613
+[Epoch 407] validation: err=0.0360
+Epoch[408] Batch [399]	Speed: 347.16 samples/sec	err=0.4619	lr=0.01664
+[Epoch 408] speed: 347.00 samples/sec	time cost: 143.82 sec
+[Epoch 408] training: err=0.4576	loss=0.7445
+[Epoch 408] validation: err=0.0388
+Epoch[409] Batch [399]	Speed: 351.18 samples/sec	err=0.4339	lr=0.01629
+[Epoch 409] speed: 351.00 samples/sec	time cost: 142.39 sec
+[Epoch 409] training: err=0.4441	loss=0.7260
+[Epoch 409] validation: err=0.0364
+Epoch[410] Batch [399]	Speed: 348.90 samples/sec	err=0.4377	lr=0.01594
+[Epoch 410] speed: 350.00 samples/sec	time cost: 142.66 sec
+[Epoch 410] training: err=0.4526	loss=0.7400
+[Epoch 410] validation: err=0.0379
+Epoch[411] Batch [399]	Speed: 349.61 samples/sec	err=0.4260	lr=0.01560
+[Epoch 411] speed: 349.00 samples/sec	time cost: 143.20 sec
+[Epoch 411] training: err=0.4387	loss=0.7485
+[Epoch 411] validation: err=0.0400
+Epoch[412] Batch [399]	Speed: 347.40 samples/sec	err=0.4667	lr=0.01526
+[Epoch 412] speed: 348.00 samples/sec	time cost: 143.58 sec
+[Epoch 412] training: err=0.4702	loss=0.7426
+[Epoch 412] validation: err=0.0340
+Epoch[413] Batch [399]	Speed: 349.68 samples/sec	err=0.4062	lr=0.01493
+[Epoch 413] speed: 350.00 samples/sec	time cost: 142.67 sec
+[Epoch 413] training: err=0.4175	loss=0.7511
+[Epoch 413] validation: err=0.0348
+Epoch[414] Batch [399]	Speed: 347.05 samples/sec	err=0.4648	lr=0.01460
+[Epoch 414] speed: 346.00 samples/sec	time cost: 144.18 sec
+[Epoch 414] training: err=0.4697	loss=0.7548
+[Epoch 414] validation: err=0.0344
+Epoch[415] Batch [399]	Speed: 349.87 samples/sec	err=0.4549	lr=0.01427
+[Epoch 415] speed: 349.00 samples/sec	time cost: 143.01 sec
+[Epoch 415] training: err=0.4681	loss=0.7264
+[Epoch 415] validation: err=0.0374
+Epoch[416] Batch [399]	Speed: 347.57 samples/sec	err=0.4591	lr=0.01394
+[Epoch 416] speed: 347.00 samples/sec	time cost: 143.84 sec
+[Epoch 416] training: err=0.4483	loss=0.7288
+[Epoch 416] validation: err=0.0372
+Epoch[417] Batch [399]	Speed: 346.70 samples/sec	err=0.4620	lr=0.01362
+[Epoch 417] speed: 346.00 samples/sec	time cost: 144.35 sec
+[Epoch 417] training: err=0.4705	loss=0.7396
+[Epoch 417] validation: err=0.0368
+Epoch[418] Batch [399]	Speed: 345.27 samples/sec	err=0.4571	lr=0.01330
+[Epoch 418] speed: 346.00 samples/sec	time cost: 144.28 sec
+[Epoch 418] training: err=0.4576	loss=0.7248
+[Epoch 418] validation: err=0.0352
+Epoch[419] Batch [399]	Speed: 345.58 samples/sec	err=0.4620	lr=0.01299
+[Epoch 419] speed: 346.00 samples/sec	time cost: 144.28 sec
+[Epoch 419] training: err=0.4500	loss=0.7146
+[Epoch 419] validation: err=0.0347
+Epoch[420] Batch [399]	Speed: 346.88 samples/sec	err=0.4631	lr=0.01268
+[Epoch 420] speed: 347.00 samples/sec	time cost: 143.92 sec
+[Epoch 420] training: err=0.4589	loss=0.7240
+[Epoch 420] validation: err=0.0328
+Epoch[421] Batch [399]	Speed: 347.86 samples/sec	err=0.4867	lr=0.01237
+[Epoch 421] speed: 348.00 samples/sec	time cost: 143.41 sec
+[Epoch 421] training: err=0.4926	loss=0.7319
+[Epoch 421] validation: err=0.0345
+Epoch[422] Batch [399]	Speed: 347.87 samples/sec	err=0.4759	lr=0.01207
+[Epoch 422] speed: 347.00 samples/sec	time cost: 143.86 sec
+[Epoch 422] training: err=0.4756	loss=0.7258
+[Epoch 422] validation: err=0.0330
+Epoch[423] Batch [399]	Speed: 351.64 samples/sec	err=0.4415	lr=0.01177
+[Epoch 423] speed: 350.00 samples/sec	time cost: 142.77 sec
+[Epoch 423] training: err=0.4483	loss=0.7243
+[Epoch 423] validation: err=0.0328
+Epoch[424] Batch [399]	Speed: 348.12 samples/sec	err=0.4626	lr=0.01147
+[Epoch 424] speed: 347.00 samples/sec	time cost: 143.99 sec
+[Epoch 424] training: err=0.4618	loss=0.7326
+[Epoch 424] validation: err=0.0330
+Epoch[425] Batch [399]	Speed: 339.66 samples/sec	err=0.4756	lr=0.01118
+[Epoch 425] speed: 340.00 samples/sec	time cost: 146.65 sec
+[Epoch 425] training: err=0.4720	loss=0.7399
+[Epoch 425] validation: err=0.0341
+Epoch[426] Batch [399]	Speed: 344.99 samples/sec	err=0.4523	lr=0.01089
+[Epoch 426] speed: 345.00 samples/sec	time cost: 144.67 sec
+[Epoch 426] training: err=0.4496	loss=0.7271
+[Epoch 426] validation: err=0.0319
+Epoch[427] Batch [399]	Speed: 344.73 samples/sec	err=0.4524	lr=0.01060
+[Epoch 427] speed: 344.00 samples/sec	time cost: 145.00 sec
+[Epoch 427] training: err=0.4508	loss=0.7115
+[Epoch 427] validation: err=0.0315
+Epoch[428] Batch [399]	Speed: 348.60 samples/sec	err=0.4647	lr=0.01032
+[Epoch 428] speed: 347.00 samples/sec	time cost: 143.69 sec
+[Epoch 428] training: err=0.4487	loss=0.7162
+[Epoch 428] validation: err=0.0328
+Epoch[429] Batch [399]	Speed: 346.47 samples/sec	err=0.4484	lr=0.01004
+[Epoch 429] speed: 346.00 samples/sec	time cost: 144.27 sec
+[Epoch 429] training: err=0.4383	loss=0.7250
+[Epoch 429] validation: err=0.0327
+Epoch[430] Batch [399]	Speed: 347.85 samples/sec	err=0.4667	lr=0.00976
+[Epoch 430] speed: 347.00 samples/sec	time cost: 143.80 sec
+[Epoch 430] training: err=0.4554	loss=0.7049
+[Epoch 430] validation: err=0.0283
+Epoch[431] Batch [399]	Speed: 345.33 samples/sec	err=0.4690	lr=0.00949
+[Epoch 431] speed: 346.00 samples/sec	time cost: 144.39 sec
+[Epoch 431] training: err=0.4723	loss=0.6913
+[Epoch 431] validation: err=0.0319
+Epoch[432] Batch [399]	Speed: 346.35 samples/sec	err=0.4517	lr=0.00922
+[Epoch 432] speed: 346.00 samples/sec	time cost: 144.39 sec
+[Epoch 432] training: err=0.4476	loss=0.7110
+[Epoch 432] validation: err=0.0293
+Epoch[433] Batch [399]	Speed: 349.89 samples/sec	err=0.4694	lr=0.00896
+[Epoch 433] speed: 348.00 samples/sec	time cost: 143.37 sec
+[Epoch 433] training: err=0.4619	loss=0.7163
+[Epoch 433] validation: err=0.0314
+Epoch[434] Batch [399]	Speed: 350.52 samples/sec	err=0.4186	lr=0.00870
+[Epoch 434] speed: 350.00 samples/sec	time cost: 142.50 sec
+[Epoch 434] training: err=0.4255	loss=0.7118
+[Epoch 434] validation: err=0.0301
+Epoch[435] Batch [399]	Speed: 349.63 samples/sec	err=0.4344	lr=0.00844
+[Epoch 435] speed: 349.00 samples/sec	time cost: 142.96 sec
+[Epoch 435] training: err=0.4345	loss=0.7022
+[Epoch 435] validation: err=0.0310
+Epoch[436] Batch [399]	Speed: 350.15 samples/sec	err=0.4264	lr=0.00819
+[Epoch 436] speed: 349.00 samples/sec	time cost: 142.90 sec
+[Epoch 436] training: err=0.4221	loss=0.6829
+[Epoch 436] validation: err=0.0333
+Epoch[437] Batch [399]	Speed: 347.54 samples/sec	err=0.4400	lr=0.00794
+[Epoch 437] speed: 347.00 samples/sec	time cost: 143.79 sec
+[Epoch 437] training: err=0.4406	loss=0.7082
+[Epoch 437] validation: err=0.0315
+Epoch[438] Batch [399]	Speed: 350.66 samples/sec	err=0.4613	lr=0.00769
+[Epoch 438] speed: 351.00 samples/sec	time cost: 142.10 sec
+[Epoch 438] training: err=0.4530	loss=0.6925
+[Epoch 438] validation: err=0.0300
+Epoch[439] Batch [399]	Speed: 353.52 samples/sec	err=0.4508	lr=0.00745
+[Epoch 439] speed: 353.00 samples/sec	time cost: 141.45 sec
+[Epoch 439] training: err=0.4514	loss=0.6819
+[Epoch 439] validation: err=0.0328
+Epoch[440] Batch [399]	Speed: 354.87 samples/sec	err=0.4313	lr=0.00721
+[Epoch 440] speed: 354.00 samples/sec	time cost: 140.94 sec
+[Epoch 440] training: err=0.4541	loss=0.6823
+[Epoch 440] validation: err=0.0316
+Epoch[441] Batch [399]	Speed: 353.51 samples/sec	err=0.4323	lr=0.00698
+[Epoch 441] speed: 353.00 samples/sec	time cost: 141.32 sec
+[Epoch 441] training: err=0.4387	loss=0.6914
+[Epoch 441] validation: err=0.0288
+Epoch[442] Batch [399]	Speed: 352.51 samples/sec	err=0.4757	lr=0.00675
+[Epoch 442] speed: 351.00 samples/sec	time cost: 142.07 sec
+[Epoch 442] training: err=0.4663	loss=0.7021
+[Epoch 442] validation: err=0.0289
+Epoch[443] Batch [399]	Speed: 354.59 samples/sec	err=0.4772	lr=0.00652
+[Epoch 443] speed: 353.00 samples/sec	time cost: 141.28 sec
+[Epoch 443] training: err=0.4780	loss=0.6804
+[Epoch 443] validation: err=0.0290
+Epoch[444] Batch [399]	Speed: 337.67 samples/sec	err=0.4720	lr=0.00629
+[Epoch 444] speed: 340.00 samples/sec	time cost: 146.73 sec
+[Epoch 444] training: err=0.4706	loss=0.6792
+[Epoch 444] validation: err=0.0292
+Epoch[445] Batch [399]	Speed: 350.81 samples/sec	err=0.4588	lr=0.00607
+[Epoch 445] speed: 352.00 samples/sec	time cost: 142.04 sec
+[Epoch 445] training: err=0.4609	loss=0.6713
+[Epoch 445] validation: err=0.0325
+Epoch[446] Batch [399]	Speed: 351.24 samples/sec	err=0.4560	lr=0.00586
+[Epoch 446] speed: 352.00 samples/sec	time cost: 142.00 sec
+[Epoch 446] training: err=0.4588	loss=0.6787
+[Epoch 446] validation: err=0.0316
+Epoch[447] Batch [399]	Speed: 352.18 samples/sec	err=0.4423	lr=0.00565
+[Epoch 447] speed: 352.00 samples/sec	time cost: 141.66 sec
+[Epoch 447] training: err=0.4393	loss=0.6668
+[Epoch 447] validation: err=0.0314
+Epoch[448] Batch [399]	Speed: 351.77 samples/sec	err=0.4453	lr=0.00544
+[Epoch 448] speed: 352.00 samples/sec	time cost: 141.98 sec
+[Epoch 448] training: err=0.4467	loss=0.6753
+[Epoch 448] validation: err=0.0286
+Epoch[449] Batch [399]	Speed: 351.49 samples/sec	err=0.4446	lr=0.00523
+[Epoch 449] speed: 351.00 samples/sec	time cost: 142.21 sec
+[Epoch 449] training: err=0.4414	loss=0.6885
+[Epoch 449] validation: err=0.0311
+Epoch[450] Batch [399]	Speed: 352.95 samples/sec	err=0.4596	lr=0.00503
+[Epoch 450] speed: 352.00 samples/sec	time cost: 141.73 sec
+[Epoch 450] training: err=0.4588	loss=0.6802
+[Epoch 450] validation: err=0.0294
+Epoch[451] Batch [399]	Speed: 349.42 samples/sec	err=0.4680	lr=0.00484
+[Epoch 451] speed: 349.00 samples/sec	time cost: 142.91 sec
+[Epoch 451] training: err=0.4542	loss=0.6770
+[Epoch 451] validation: err=0.0310
+Epoch[452] Batch [399]	Speed: 352.46 samples/sec	err=0.4381	lr=0.00464
+[Epoch 452] speed: 352.00 samples/sec	time cost: 141.90 sec
+[Epoch 452] training: err=0.4402	loss=0.6672
+[Epoch 452] validation: err=0.0300
+Epoch[453] Batch [399]	Speed: 351.30 samples/sec	err=0.4616	lr=0.00445
+[Epoch 453] speed: 350.00 samples/sec	time cost: 142.54 sec
+[Epoch 453] training: err=0.4650	loss=0.6700
+[Epoch 453] validation: err=0.0305
+Epoch[454] Batch [399]	Speed: 352.02 samples/sec	err=0.4235	lr=0.00427
+[Epoch 454] speed: 352.00 samples/sec	time cost: 142.01 sec
+[Epoch 454] training: err=0.4280	loss=0.6736
+[Epoch 454] validation: err=0.0286
+Epoch[455] Batch [399]	Speed: 350.89 samples/sec	err=0.4482	lr=0.00409
+[Epoch 455] speed: 350.00 samples/sec	time cost: 142.63 sec
+[Epoch 455] training: err=0.4631	loss=0.6766
+[Epoch 455] validation: err=0.0298
+Epoch[456] Batch [399]	Speed: 354.44 samples/sec	err=0.4507	lr=0.00391
+[Epoch 456] speed: 354.00 samples/sec	time cost: 141.13 sec
+[Epoch 456] training: err=0.4502	loss=0.6575
+[Epoch 456] validation: err=0.0283
+Epoch[457] Batch [399]	Speed: 345.34 samples/sec	err=0.4794	lr=0.00374
+[Epoch 457] speed: 344.00 samples/sec	time cost: 145.21 sec
+[Epoch 457] training: err=0.4759	loss=0.6631
+[Epoch 457] validation: err=0.0291
+Epoch[458] Batch [399]	Speed: 339.64 samples/sec	err=0.4603	lr=0.00357
+[Epoch 458] speed: 340.00 samples/sec	time cost: 146.80 sec
+[Epoch 458] training: err=0.4609	loss=0.6889
+[Epoch 458] validation: err=0.0287
+Epoch[459] Batch [399]	Speed: 339.07 samples/sec	err=0.4108	lr=0.00340
+[Epoch 459] speed: 340.00 samples/sec	time cost: 147.01 sec
+[Epoch 459] training: err=0.4336	loss=0.6611
+[Epoch 459] validation: err=0.0287
+Epoch[460] Batch [399]	Speed: 340.55 samples/sec	err=0.4530	lr=0.00324
+[Epoch 460] speed: 342.00 samples/sec	time cost: 146.03 sec
+[Epoch 460] training: err=0.4662	loss=0.6721
+[Epoch 460] validation: err=0.0279
+Epoch[461] Batch [399]	Speed: 338.58 samples/sec	err=0.4333	lr=0.00308
+[Epoch 461] speed: 338.00 samples/sec	time cost: 147.72 sec
+[Epoch 461] training: err=0.4369	loss=0.6537
+[Epoch 461] validation: err=0.0298
+Epoch[462] Batch [399]	Speed: 340.03 samples/sec	err=0.4548	lr=0.00292
+[Epoch 462] speed: 339.00 samples/sec	time cost: 147.18 sec
+[Epoch 462] training: err=0.4403	loss=0.6683
+[Epoch 462] validation: err=0.0288
+Epoch[463] Batch [399]	Speed: 340.00 samples/sec	err=0.4759	lr=0.00277
+[Epoch 463] speed: 339.00 samples/sec	time cost: 147.19 sec
+[Epoch 463] training: err=0.4679	loss=0.6391
+[Epoch 463] validation: err=0.0292
+Epoch[464] Batch [399]	Speed: 343.57 samples/sec	err=0.4499	lr=0.00263
+[Epoch 464] speed: 343.00 samples/sec	time cost: 145.59 sec
+[Epoch 464] training: err=0.4513	loss=0.6423
+[Epoch 464] validation: err=0.0275
+Epoch[465] Batch [399]	Speed: 326.79 samples/sec	err=0.4589	lr=0.00249
+[Epoch 465] speed: 326.00 samples/sec	time cost: 153.10 sec
+[Epoch 465] training: err=0.4563	loss=0.6560
+[Epoch 465] validation: err=0.0270
+Epoch[466] Batch [399]	Speed: 342.64 samples/sec	err=0.4666	lr=0.00235
+[Epoch 466] speed: 341.00 samples/sec	time cost: 146.25 sec
+[Epoch 466] training: err=0.4528	loss=0.6482
+[Epoch 466] validation: err=0.0282
+Epoch[467] Batch [399]	Speed: 338.20 samples/sec	err=0.4405	lr=0.00221
+[Epoch 467] speed: 337.00 samples/sec	time cost: 147.99 sec
+[Epoch 467] training: err=0.4584	loss=0.6521
+[Epoch 467] validation: err=0.0277
+Epoch[468] Batch [399]	Speed: 340.44 samples/sec	err=0.4992	lr=0.00208
+[Epoch 468] speed: 339.00 samples/sec	time cost: 147.11 sec
+[Epoch 468] training: err=0.4989	loss=0.6419
+[Epoch 468] validation: err=0.0297
+Epoch[469] Batch [399]	Speed: 340.84 samples/sec	err=0.4271	lr=0.00195
+[Epoch 469] speed: 342.00 samples/sec	time cost: 146.20 sec
+[Epoch 469] training: err=0.4325	loss=0.6227
+[Epoch 469] validation: err=0.0298
+Epoch[470] Batch [399]	Speed: 342.01 samples/sec	err=0.4631	lr=0.00183
+[Epoch 470] speed: 342.00 samples/sec	time cost: 145.82 sec
+[Epoch 470] training: err=0.4648	loss=0.6536
+[Epoch 470] validation: err=0.0281
+Epoch[471] Batch [399]	Speed: 340.27 samples/sec	err=0.4623	lr=0.00171
+[Epoch 471] speed: 341.00 samples/sec	time cost: 146.33 sec
+[Epoch 471] training: err=0.4579	loss=0.6518
+[Epoch 471] validation: err=0.0285
+Epoch[472] Batch [399]	Speed: 340.70 samples/sec	err=0.4500	lr=0.00160
+[Epoch 472] speed: 350.00 samples/sec	time cost: 142.82 sec
+[Epoch 472] training: err=0.4588	loss=0.6427
+[Epoch 472] validation: err=0.0280
+Epoch[473] Batch [399]	Speed: 401.24 samples/sec	err=0.4277	lr=0.00149
+[Epoch 473] speed: 401.00 samples/sec	time cost: 124.54 sec
+[Epoch 473] training: err=0.4487	loss=0.6441
+[Epoch 473] validation: err=0.0271
+Epoch[474] Batch [399]	Speed: 400.80 samples/sec	err=0.4897	lr=0.00138
+[Epoch 474] speed: 400.00 samples/sec	time cost: 124.69 sec
+[Epoch 474] training: err=0.4805	loss=0.6708
+[Epoch 474] validation: err=0.0286
+Epoch[475] Batch [399]	Speed: 398.08 samples/sec	err=0.4317	lr=0.00128
+[Epoch 475] speed: 398.00 samples/sec	time cost: 125.58 sec
+[Epoch 475] training: err=0.4355	loss=0.6511
+[Epoch 475] validation: err=0.0275
+Epoch[476] Batch [399]	Speed: 397.93 samples/sec	err=0.4482	lr=0.00118
+[Epoch 476] speed: 398.00 samples/sec	time cost: 125.51 sec
+[Epoch 476] training: err=0.4447	loss=0.6327
+[Epoch 476] validation: err=0.0269
+Epoch[477] Batch [399]	Speed: 397.56 samples/sec	err=0.4484	lr=0.00108
+[Epoch 477] speed: 398.00 samples/sec	time cost: 125.58 sec
+[Epoch 477] training: err=0.4421	loss=0.6555
+[Epoch 477] validation: err=0.0270
+Epoch[478] Batch [399]	Speed: 396.24 samples/sec	err=0.4567	lr=0.00099
+[Epoch 478] speed: 397.00 samples/sec	time cost: 125.86 sec
+[Epoch 478] training: err=0.4504	loss=0.6584
+[Epoch 478] validation: err=0.0268
+Epoch[479] Batch [399]	Speed: 396.56 samples/sec	err=0.4221	lr=0.00090
+[Epoch 479] speed: 397.00 samples/sec	time cost: 125.71 sec
+[Epoch 479] training: err=0.4342	loss=0.6589
+[Epoch 479] validation: err=0.0276
+Epoch[480] Batch [399]	Speed: 397.93 samples/sec	err=0.4391	lr=0.00082
+[Epoch 480] speed: 398.00 samples/sec	time cost: 125.49 sec
+[Epoch 480] training: err=0.4271	loss=0.6504
+[Epoch 480] validation: err=0.0263
+Epoch[481] Batch [399]	Speed: 399.97 samples/sec	err=0.4250	lr=0.00074
+[Epoch 481] speed: 400.00 samples/sec	time cost: 124.99 sec
+[Epoch 481] training: err=0.4274	loss=0.6434
+[Epoch 481] validation: err=0.0265
+Epoch[482] Batch [399]	Speed: 398.11 samples/sec	err=0.4399	lr=0.00067
+[Epoch 482] speed: 398.00 samples/sec	time cost: 125.41 sec
+[Epoch 482] training: err=0.4488	loss=0.6425
+[Epoch 482] validation: err=0.0268
+Epoch[483] Batch [399]	Speed: 397.41 samples/sec	err=0.4745	lr=0.00060
+[Epoch 483] speed: 397.00 samples/sec	time cost: 125.72 sec
+[Epoch 483] training: err=0.4591	loss=0.6233
+[Epoch 483] validation: err=0.0265
+Epoch[484] Batch [399]	Speed: 398.68 samples/sec	err=0.4265	lr=0.00053
+[Epoch 484] speed: 399.00 samples/sec	time cost: 125.08 sec
+[Epoch 484] training: err=0.4263	loss=0.6361
+[Epoch 484] validation: err=0.0268
+Epoch[485] Batch [399]	Speed: 397.93 samples/sec	err=0.4352	lr=0.00047
+[Epoch 485] speed: 398.00 samples/sec	time cost: 125.36 sec
+[Epoch 485] training: err=0.4412	loss=0.6459
+[Epoch 485] validation: err=0.0269
+Epoch[486] Batch [399]	Speed: 398.09 samples/sec	err=0.4166	lr=0.00041
+[Epoch 486] speed: 398.00 samples/sec	time cost: 125.40 sec
+[Epoch 486] training: err=0.4312	loss=0.6307
+[Epoch 486] validation: err=0.0262
+Epoch[487] Batch [399]	Speed: 385.62 samples/sec	err=0.4611	lr=0.00035
+[Epoch 487] speed: 388.00 samples/sec	time cost: 128.70 sec
+[Epoch 487] training: err=0.4600	loss=0.6428
+[Epoch 487] validation: err=0.0278
+Epoch[488] Batch [399]	Speed: 397.91 samples/sec	err=0.4597	lr=0.00030
+[Epoch 488] speed: 398.00 samples/sec	time cost: 125.32 sec
+[Epoch 488] training: err=0.4544	loss=0.6542
+[Epoch 488] validation: err=0.0271
+Epoch[489] Batch [399]	Speed: 397.94 samples/sec	err=0.4460	lr=0.00025
+[Epoch 489] speed: 398.00 samples/sec	time cost: 125.43 sec
+[Epoch 489] training: err=0.4517	loss=0.6548
+[Epoch 489] validation: err=0.0270
+Epoch[490] Batch [399]	Speed: 397.42 samples/sec	err=0.4409	lr=0.00021
+[Epoch 490] speed: 397.00 samples/sec	time cost: 125.69 sec
+[Epoch 490] training: err=0.4455	loss=0.6195
+[Epoch 490] validation: err=0.0267
+Epoch[491] Batch [399]	Speed: 398.49 samples/sec	err=0.0000	lr=0.00017
+[Epoch 491] speed: 398.00 samples/sec	time cost: 125.37 sec
+[Epoch 491] training: err=0.0000	loss=0.0067
+[Epoch 491] validation: err=0.0240
+Epoch[492] Batch [399]	Speed: 400.16 samples/sec	err=0.0000	lr=0.00014
+[Epoch 492] speed: 401.00 samples/sec	time cost: 124.66 sec
+[Epoch 492] training: err=0.0000	loss=0.0060
+[Epoch 492] validation: err=0.0245
+Epoch[493] Batch [399]	Speed: 399.13 samples/sec	err=0.0000	lr=0.00010
+[Epoch 493] speed: 400.00 samples/sec	time cost: 124.81 sec
+[Epoch 493] training: err=0.0000	loss=0.0057
+[Epoch 493] validation: err=0.0243
+Epoch[494] Batch [399]	Speed: 400.98 samples/sec	err=0.0000	lr=0.00008
+[Epoch 494] speed: 400.00 samples/sec	time cost: 124.73 sec
+[Epoch 494] training: err=0.0000	loss=0.0055
+[Epoch 494] validation: err=0.0247
+Epoch[495] Batch [399]	Speed: 399.10 samples/sec	err=0.0000	lr=0.00005
+[Epoch 495] speed: 399.00 samples/sec	time cost: 125.02 sec
+[Epoch 495] training: err=0.0000	loss=0.0054
+[Epoch 495] validation: err=0.0242
+Epoch[496] Batch [399]	Speed: 399.81 samples/sec	err=0.0000	lr=0.00004
+[Epoch 496] speed: 400.00 samples/sec	time cost: 124.76 sec
+[Epoch 496] training: err=0.0000	loss=0.0052
+[Epoch 496] validation: err=0.0239
+Epoch[497] Batch [399]	Speed: 398.67 samples/sec	err=0.0000	lr=0.00002
+[Epoch 497] speed: 399.00 samples/sec	time cost: 125.12 sec
+[Epoch 497] training: err=0.0000	loss=0.0052
+[Epoch 497] validation: err=0.0247
+Epoch[498] Batch [399]	Speed: 399.49 samples/sec	err=0.0000	lr=0.00001
+[Epoch 498] speed: 399.00 samples/sec	time cost: 125.16 sec
+[Epoch 498] training: err=0.0000	loss=0.0052
+[Epoch 498] validation: err=0.0239
+Epoch[499] Batch [399]	Speed: 400.29 samples/sec	err=0.0000	lr=0.00000
+[Epoch 499] speed: 400.00 samples/sec	time cost: 124.83 sec
+[Epoch 499] training: err=0.0000	loss=0.0052
+[Epoch 499] validation: err=0.0244
+Epoch[500] Batch [399]	Speed: 399.82 samples/sec	err=0.0000	lr=0.00000
+[Epoch 500] speed: 400.00 samples/sec	time cost: 124.82 sec
+[Epoch 500] training: err=0.0000	loss=0.0051
+[Epoch 500] validation: err=0.0245
+Total time cost: 75382.92 sec
+Best err: 0.0239 at 496 epoch
+--------------------------------
+Script command line:
+eval_gl_cifar10.py --num-gpus=1 --model=wrn28_10_cifar10 --batch-size=128 -j=4 --save-dir=../imgclsmob_data/gl-wrn28_10_cifar10-0239/ --resume=../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10-0239.params --calc-flops
+Script arguments:
+Namespace(batch_size=128, calc_flops=True, calc_flops_only=False, data_dir='../imgclsmob_data/cifar10', dtype='float32', in_channels=3, log_packages='mxnet', log_pip_packages='mxnet-cu92', logging_file_name='train.log', model='wrn28_10_cifar10', num_classes=10, num_gpus=1, num_workers=4, resume='../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10-0239.params', save_dir='../imgclsmob_data/gl-wrn28_10_cifar10-0239/', use_pretrained=False)
+Env_stats:
+{
+    "mxnet": "1.5.0",
+    "mxnet-cu92": "Name: mxnet-cu92\nVersion: 1.5.0b20190112\nSummary: MXNet is an ultra-scalable deep learning framework. This version uses CUDA-9.2.\nHome-page: https://github.com/apache/incubator-mxnet\nAuthor: UNKNOWN\nAuthor-email: UNKNOWN\nLicense: Apache 2.0\nLocation: /usr/local/lib/python3.6/dist-packages\nRequires: graphviz, requests, numpy\nRequired-by:",
+    "python": "3.6.7",
+    "pwd": "/netbox/imgclsmob/common",
+    "git": "commit 1798d6a30b3e84fdabc47f4cb0b1e7b2350ee905\nAuthor: osmr <osemery@gmail.com>\nDate:   Sun Jan 13 13:37:03 2019 +0300\n\n    Working on CH-CIFAR10 models"
+}
+Loading model: ../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10-0239.params
+Test: err=0.0239 (0.023900000000000032))
+Time cost: 18.0382 sec
+Params: 36479194 (36.48M), FLOPs: 10493968848 (10493.97M), FLOPs/2: 5246984424.0 (5246.98M), MACs: 5243328768 (5243.33M)
+--------------------------------
+Script command line:
+convert_models.py --src-fwk=gluon --dst-fwk=pytorch --src-model=wrn28_10_cifar10 --dst-model=wrn28_10_cifar10 --src-params=../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10-0239-16f3c8a2.params --dst-params=../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10.pth --save-dir=../imgclsmob_data/gl-wrn28_10_cifar10-0239/ --src-num-classes=10 --dst-num-classes=10
+Script arguments:
+Namespace(dst_fwk='pytorch', dst_in_channels=3, dst_model='wrn28_10_cifar10', dst_num_classes=10, dst_params='../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10.pth', logging_file_name='train.log', remove_module=False, save_dir='../imgclsmob_data/gl-wrn28_10_cifar10-0239/', src_fwk='gluon', src_in_channels=3, src_model='wrn28_10_cifar10', src_num_classes=10, src_params='../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10-0239-16f3c8a2.params')
+Env_stats:
+{
+    "mxnet": "1.5.0",
+    "torch": "0.4.1",
+    "torchvision": "0.2.1",
+    "mxnet-cu92": "Name: mxnet-cu92\nVersion: 1.5.0b20190112\nSummary: MXNet is an ultra-scalable deep learning framework. This version uses CUDA-9.2.\nHome-page: https://github.com/apache/incubator-mxnet\nAuthor: UNKNOWN\nAuthor-email: UNKNOWN\nLicense: Apache 2.0\nLocation: /usr/local/lib/python3.6/dist-packages\nRequires: requests, graphviz, numpy\nRequired-by:",
+    "python": "3.6.7",
+    "pwd": "/netbox/imgclsmob/common",
+    "git": "commit 1798d6a30b3e84fdabc47f4cb0b1e7b2350ee905\nAuthor: osmr <osemery@gmail.com>\nDate:   Sun Jan 13 13:37:03 2019 +0300\n\n    Working on CH-CIFAR10 models"
+}
+Loading model: ../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10-0239-16f3c8a2.params
+Convert gluon-model wrn28_10_cifar10 into pytorch-model wrn28_10_cifar10
+--------------------------------
+Script command line:
+eval_pt_cifar10.py --num-gpus=1 --model=wrn28_10_cifar10 --batch-size=128 -j=4 --save-dir=../imgclsmob_data/gl-wrn28_10_cifar10-0239/ --resume=../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10.pth --calc-flops
+Script arguments:
+Namespace(batch_size=128, calc_flops=True, calc_flops_only=False, data_dir='../imgclsmob_data/cifar10', in_channels=3, log_packages='torch, torchvision', log_pip_packages='', logging_file_name='train.log', model='wrn28_10_cifar10', num_classes=10, num_gpus=1, num_workers=4, remove_module=False, resume='../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10.pth', save_dir='../imgclsmob_data/gl-wrn28_10_cifar10-0239/', use_pretrained=False)
+Env_stats:
+{
+    "torch": "0.4.1",
+    "torchvision": "0.2.1",
+    "python": "3.6.7",
+    "pwd": "/netbox/imgclsmob/common",
+    "git": "commit 1798d6a30b3e84fdabc47f4cb0b1e7b2350ee905\nAuthor: osmr <osemery@gmail.com>\nDate:   Sun Jan 13 13:37:03 2019 +0300\n\n    Working on CH-CIFAR10 models"
+}
+Loading model: ../imgclsmob_data/gl-wrn28_10_cifar10-0239/wrn28_10_cifar10.pth
+Test: err=0.0239 (0.02390003204345703)
+Time cost: 26.8650 sec
+Params: 36479194 (36.48M), FLOPs: 10493968848 (10493.97M), FLOPs/2: 5246984424.0 (5246.98M), MACs: 5243328768 (5243.33M)

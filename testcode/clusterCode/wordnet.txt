@@ -1,0 +1,1 @@
+Each of WordNet's 117 000 synsets is linked to other synsets by means of a small number of “conceptual relations.”

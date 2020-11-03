@@ -1,0 +1,8 @@
+已知：
+1. wrn28_10_cifar10  28深度 10宽度 数据集cifar10
+
+
+
+1.classes 如何对应到weights?
+根据nbdt/wnid/底下的文件，id有顺序和weights直接对应。
+2.如何找到weights对应的类名?
