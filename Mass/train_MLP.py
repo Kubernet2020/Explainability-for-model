@@ -9,6 +9,17 @@ import torch.utils.data as Data
 from sklearn import preprocessing, utils
 from nbdt.models.myMPLnet import myMLP
 from sklearn.preprocessing import LabelEncoder
+import random
+
+def setup_seed(seed):
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    torch.backends.cudnn.deterministic = True
+
+
+setup_seed(20)
 
 nrows = 100000
 
@@ -77,7 +88,7 @@ print(y_train)
 
 mlp = myMLP(x.shape[1], len(le.classes_))
 
-EPOCH = 15
+EPOCH = 10
 BATCH_SIZE = 10000
 LR = 0.001
 optimizer = optim.SGD(mlp.parameters(), lr = LR)   # optimize all cnn parameters
